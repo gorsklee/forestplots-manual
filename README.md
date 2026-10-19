@@ -1,6 +1,6 @@
 # ForestPlots.net Training Manual
 
-A bookdown training manual for [ForestPlots.net](https://forestplots.net), covering account setup, data entry, quality control, querying, and analysis.
+A bookdown training manual for [ForestPlots.net](https://forestplots.net) to enable the ForestPlots team to show someone how to work with ForestPlots once but be able to share instructions whenever it is useful. It will cover account setup, data entry, quality control, querying, and analysis.
 
 ## Repository structure
 
