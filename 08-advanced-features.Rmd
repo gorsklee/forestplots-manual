@@ -1,0 +1,64 @@
+# Advanced Features {#advanced-features}
+
+## Managing a network or group
+
+<!--
+  TODO: For network coordinators — how to add/remove users, set permissions, manage plot access.
+-->
+
+*[Content to be added]*
+
+## Plot documents and attachments
+
+<!--
+  TODO: How to upload and manage supporting documents — field protocols, maps, photos, shapefiles.
+-->
+
+*[Content to be added]*
+
+## Species lists and taxonomic management
+
+<!--
+  TODO: How the species database works, how to add new species or request name corrections.
+  Cover: accepted names, synonyms, family-level taxonomy, integration with external databases (e.g. TNRS, GBIF).
+-->
+
+*[Content to be added]*
+
+## API access
+
+<!--
+  TODO: Overview of the ForestPlots API for programmatic access.
+  Cover: authentication, available endpoints, rate limits, example requests.
+-->
+
+### Authentication
+
+```bash
+# Example API token request
+curl -X POST https://forestplots.net/api/v1/auth \
+  -H "Content-Type: application/json" \
+  -d '{"username": "your_username", "password": "your_password"}'
+```
+
+### Example API calls
+
+```r
+# TODO: Add R examples using httr or the ForestPlots R package's API layer
+```
+
+## Exporting data for other platforms
+
+<!--
+  TODO: Export options for GIS software, GBIF, TRY, etc.
+-->
+
+*[Content to be added]*
+
+## Notifications and alerts
+
+<!--
+  TODO: How to set up email/platform notifications for new censuses, data uploads, or system messages.
+-->
+
+*[Content to be added]*

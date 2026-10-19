@@ -1,0 +1,17 @@
+bookdown::gitbook:
+  css: style.css
+  split_by: chapter
+  config:
+    toc:
+      collapse: section
+      before: |
+        <li><a href="./">ForestPlots.net Training Manual</a></li>
+      after: |
+        <li><a href="https://forestplots.net" target="_blank">ForestPlots.net</a></li>
+    download: ["pdf", "epub"]
+    sharing:
+      github: yes
+      twitter: no
+      facebook: no
+  includes:
+    in_header: header.html

@@ -1,0 +1,81 @@
+# Frequently Asked Questions {#faq}
+
+## Account and access
+
+**Q: I haven't received my account verification email — what should I do?**
+
+*[Answer]*
+
+**Q: How do I reset my password?**
+
+*[Answer]*
+
+**Q: I can see a plot on the map but cannot access its data — why?**
+
+*[Answer]*
+
+---
+
+## Data entry
+
+**Q: What should I do if a stem has died between censuses?**
+
+*[Answer]*
+
+**Q: Can I enter data from multiple censuses at the same time?**
+
+*[Answer]*
+
+**Q: How do I handle a re-tagged stem where the original tag was lost?**
+
+*[Answer]*
+
+---
+
+## Data quality
+
+**Q: I received a validation error for a DBH value I am confident is correct — what do I do?**
+
+*[Answer]*
+
+**Q: Can I override a validation flag?**
+
+*[Answer]*
+
+---
+
+## Querying and downloading
+
+**Q: I can see a plot but the download button is greyed out — why?**
+
+*[Answer]*
+
+**Q: How do I request access to data that is under embargo?**
+
+*[Answer]*
+
+**Q: What format should I cite when using downloaded data in a publication?**
+
+*[Answer]*
+
+---
+
+## R package
+
+**Q: The R package says my credentials are invalid, but I can log in on the website — what's wrong?**
+
+*[Answer]*
+
+**Q: How do I report a bug in the R package?**
+
+*[Answer]*
+
+---
+
+## Getting further help
+
+If your question is not answered here, please contact the ForestPlots.net team:
+
+- **Email:** *[support email]*
+- **Help forum:** *[link]*
+- **GitHub Issues (R package):** *[link]*

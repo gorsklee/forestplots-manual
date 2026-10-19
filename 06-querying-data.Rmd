@@ -1,0 +1,67 @@
+# Querying and Downloading Data {#querying-data}
+
+## Overview of the query system
+
+<!--
+  TODO: Introduce the data querying interface.
+  Cover: what can be queried, access restrictions by role, query builder vs. direct download.
+-->
+
+*[Content to be added]*
+
+## Searching for data
+
+<!--
+  TODO: Walk through building a query — selecting networks, countries, date ranges, species, measurement types.
+-->
+
+*[Content to be added]*
+
+## Filtering by plot characteristics
+
+<!--
+  TODO: How to filter by forest type, elevation, disturbance history, plot size, etc.
+-->
+
+*[Content to be added]*
+
+## Downloading data
+
+<!--
+  TODO: Step-by-step download instructions.
+  Cover: selecting download format (CSV, Excel), choosing which fields to include, download queue, notifications.
+-->
+
+*[Content to be added]*
+
+## Understanding the download files
+
+<!--
+  TODO: Describe the structure of downloaded files.
+  Cover: column headers and their meanings, one file per table (stems, species, plots, etc.), joining tables.
+-->
+
+### File structure
+
+*[Content to be added]*
+
+### Key columns
+
+| Column | Description | Units |
+|--------|-------------|-------|
+| `PlotCode` | Unique plot identifier | — |
+| `CensusNo` | Census number within a plot | — |
+| `Tag` | Individual stem tag number | — |
+| `DBH` | Diameter at breast height | cm |
+| `Status` | Stem status at census | — |
+
+*[Expand table as needed]*
+
+## Data use agreements and attribution
+
+<!--
+  TODO: Remind users of data governance obligations when downloading.
+  Cover: DUA acceptance, citing plot owners and networks, embargo periods.
+-->
+
+*[Content to be added]*

@@ -1,0 +1,95 @@
+# The ForestPlots R Package {#r-package}
+
+<!--
+  TODO: Replace package name below with the correct package name(s) used by the ForestPlots team.
+  e.g. forestplots, RAINFOR, BiomasaFP, etc.
+-->
+
+## Installation
+
+```r
+# Install from CRAN (if available)
+install.packages("forestplots")
+
+# Or install the development version from GitHub
+# install.packages("devtools")
+devtools::install_github("ForestPlots/forestplots-r")
+```
+
+## Authentication
+
+<!--
+  TODO: Explain how to authenticate the R package with a user's ForestPlots.net credentials or API token.
+-->
+
+```r
+library(forestplots)
+
+# Authenticate with your credentials
+fp_auth(username = "your_username", password = "your_password")
+
+# Or use an API token (recommended)
+fp_auth(token = "your_api_token")
+```
+
+## Loading data into R
+
+<!--
+  TODO: Show how to pull data directly from ForestPlots.net into R using the package.
+-->
+
+```r
+# Download stem data for a specific plot
+stems <- fp_get_stems(plot_code = "BOL-01")
+
+# Download all plots you have access to
+my_plots <- fp_get_plots()
+```
+
+## Common analyses
+
+### Calculating basal area
+
+```r
+# TODO: Add working example
+```
+
+### Estimating above-ground biomass (AGB)
+
+```r
+# TODO: Add working example using BIOMASS or equivalent
+```
+
+### Computing stem growth and mortality rates
+
+```r
+# TODO: Add working example
+```
+
+## Working with the downloaded CSV files
+
+<!--
+  TODO: Show how to load and join the CSV files downloaded from the platform (for users not using the R package directly).
+-->
+
+```r
+# Load stem data
+stems <- read.csv("stems.csv")
+
+# Load plot metadata
+plots <- read.csv("plots.csv")
+
+# Join tables
+library(dplyr)
+data <- left_join(stems, plots, by = "PlotCode")
+```
+
+## Further resources
+
+<!--
+  TODO: Links to package vignettes, GitHub repo, and any published workflows.
+-->
+
+- Package documentation: *[link]*
+- GitHub repository: *[link]*
+- Example workflows: *[link]*

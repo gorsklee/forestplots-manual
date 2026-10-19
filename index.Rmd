@@ -1,0 +1,44 @@
+---
+title: "ForestPlots.net Training Manual"
+author: "ForestPlots Team, University of Leeds"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [references.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: |
+  A comprehensive training manual for using the ForestPlots.net platform,
+  covering data entry, querying, quality control, and analysis.
+cover-image: images/forestplots-logo.png
+url: 'https://your-org.github.io/forestplots-manual'
+github-repo: your-org/forestplots-manual
+---
+
+# Welcome {-}
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+Welcome to the **ForestPlots.net Training Manual**. This guide is designed to help new and existing users of [ForestPlots.net](https://forestplots.net) — the global network for monitoring tropical forest plots — to get the most out of the platform.
+
+## How to use this manual {-}
+
+This manual is organised into chapters that follow a natural workflow, from creating an account through to downloading and analysing data. You can read it sequentially or jump to the chapter most relevant to your needs.
+
+- **New users** should start with Chapters \@ref(introduction) and \@ref(getting-started).
+- **Data contributors** will find Chapters \@ref(data-entry) and \@ref(data-quality) most useful.
+- **Data users** seeking to query or download data should head to Chapter \@ref(querying-data).
+- **R users** will find the `RAINFOR` / ForestPlots R package covered in Chapter \@ref(r-package).
+
+## About ForestPlots.net {-}
+
+ForestPlots.net is a pan-tropical network and database hosting long-term forest inventory data from permanent sample plots across the tropics. It supports research into forest dynamics, carbon stocks, and ecosystem responses to climate change.
+
+```{r include=FALSE}
+# Automatically create a bib database for R packages used in this book
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```

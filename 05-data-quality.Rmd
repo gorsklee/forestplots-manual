@@ -1,0 +1,54 @@
+# Data Quality and Validation {#data-quality}
+
+## Why data quality matters
+
+<!--
+  TODO: Briefly explain the importance of consistent, high-quality data for cross-site and long-term analyses.
+-->
+
+*[Content to be added]*
+
+## Automated validation checks
+
+<!--
+  TODO: Describe the platform's built-in validation rules.
+  Cover: DBH range checks, species name validation, census date ordering, duplicate stem detection.
+-->
+
+*[Content to be added]*
+
+## Reviewing validation flags
+
+<!--
+  TODO: How to find and interpret validation warnings and errors.
+  Cover: flag types (error vs. warning), where to see them, how to resolve them.
+-->
+
+*[Content to be added]*
+
+## Manual quality review
+
+<!--
+  TODO: Best practices for reviewing data before submitting a census.
+  Cover: cross-checking field sheets, comparing census-to-census growth rates, outlier detection.
+-->
+
+*[Content to be added]*
+
+## Common data entry errors and how to fix them
+
+<!--
+  TODO: Table or list of frequent mistakes and their resolutions.
+-->
+
+| Error | Likely cause | How to fix |
+|-------|-------------|------------|
+| *[Error type]* | *[Cause]* | *[Fix]* |
+
+## Data approval and sign-off
+
+<!--
+  TODO: Explain the approval workflow — who reviews, what is checked, how a census is marked as approved.
+-->
+
+*[Content to be added]*

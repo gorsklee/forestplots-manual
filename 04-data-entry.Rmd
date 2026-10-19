@@ -1,0 +1,80 @@
+# Data Entry {#data-entry}
+
+## Overview of the data entry workflow
+
+<!--
+  TODO: High-level summary of the data entry process.
+  Diagram or flowchart showing: create plot → add metadata → add census → enter stems → validate.
+-->
+
+*[Content to be added]*
+
+## Creating a new plot
+
+<!--
+  TODO: Step-by-step guide for registering a new plot.
+  Cover: required fields (name, coordinates, area, forest type), optional metadata.
+-->
+
+*[Content to be added]*
+
+## Adding plot metadata
+
+<!--
+  TODO: Details on the metadata fields — soil type, elevation, climate zone, disturbance history, etc.
+-->
+
+*[Content to be added]*
+
+## Creating a census
+
+<!--
+  TODO: How to add a new census to an existing plot.
+  Cover: census date, observers, field conditions, equipment used.
+-->
+
+*[Content to be added]*
+
+## Entering stem-level data
+
+<!--
+  TODO: How to enter individual stem records within a census.
+  Cover: species identification, DBH measurement, tags, status codes (alive/dead/recruit).
+-->
+
+### Species identification
+
+*[Content to be added]*
+
+### Measurements
+
+*[Content to be added]*
+
+### Stem status codes
+
+| Code | Meaning |
+|------|---------|
+| A | Alive |
+| D | Dead |
+| R | Recruit |
+| M | Missing |
+
+*[Add further codes as appropriate]*
+
+## Uploading data in bulk
+
+<!--
+  TODO: Instructions for uploading data from spreadsheet templates.
+  Cover: downloading the template, filling it in, common formatting rules, upload process, reviewing upload results.
+-->
+
+*[Content to be added]*
+
+## Editing existing records
+
+<!--
+  TODO: How to correct or update data after it has been entered.
+  Cover: audit trail, who can edit, requesting edits from plot owners.
+-->
+
+*[Content to be added]*

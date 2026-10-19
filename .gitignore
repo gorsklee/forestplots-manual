@@ -1,0 +1,18 @@
+# Bookdown output directories
+_book/
+_bookdown_files/
+docs/
+
+# R-generated files
+packages.bib
+*.Rhistory
+*.RData
+*.Ruserdata
+.Rproj.user/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# RStudio project
+*.Rproj

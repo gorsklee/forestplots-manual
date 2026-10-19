@@ -1,0 +1,58 @@
+# Getting Started {#getting-started}
+
+## Creating an account
+
+<!--
+  TODO: Step-by-step instructions for registering on ForestPlots.net.
+  Include screenshots where helpful.
+  Cover: registration form, email verification, account approval process.
+-->
+
+*[Content to be added]*
+
+## Logging in
+
+<!--
+  TODO: Basic login instructions, password reset, and any two-factor authentication details.
+-->
+
+*[Content to be added]*
+
+## Account types and permissions
+
+<!--
+  TODO: Describe the different user roles (e.g. viewer, contributor, plot owner, administrator)
+  and what each can do on the platform.
+-->
+
+| Role | Permissions |
+|------|-------------|
+| Viewer | *[Description]* |
+| Contributor | *[Description]* |
+| Plot Owner | *[Description]* |
+| Administrator | *[Description]* |
+
+## Joining a network or group
+
+<!--
+  TODO: Explain how users request access to a specific network (e.g. RAINFOR, AfriTRON)
+  and how network coordinators approve requests.
+-->
+
+*[Content to be added]*
+
+## Requesting access to specific plots
+
+<!--
+  TODO: Explain the process for requesting access to plot-level data that is restricted.
+-->
+
+*[Content to be added]*
+
+## Your user profile
+
+<!--
+  TODO: Walk through the profile page — institution, contact details, ORCID linking, notification settings.
+-->
+
+*[Content to be added]*

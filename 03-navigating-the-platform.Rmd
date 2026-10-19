@@ -1,0 +1,45 @@
+# Navigating the Platform {#navigating}
+
+## The dashboard
+
+<!--
+  TODO: Overview of the main dashboard after login.
+  Include annotated screenshot.
+  Cover: navigation menu, quick-access panels, notifications.
+-->
+
+*[Content to be added]*
+
+## Finding plots
+
+<!--
+  TODO: How to search for plots using the map interface and filters.
+  Cover: geographic search, filter by network, country, forest type, plot status.
+-->
+
+*[Content to be added]*
+
+## The map interface
+
+<!--
+  TODO: Describe interactive map features — zooming, clicking on plots, viewing plot summaries.
+-->
+
+*[Content to be added]*
+
+## Plot summary pages
+
+<!--
+  TODO: Walk through a plot summary page.
+  Cover: metadata panel, census timeline, linked documents, team members.
+-->
+
+*[Content to be added]*
+
+## Navigation tips and shortcuts
+
+<!--
+  TODO: Useful tips for efficient navigation — breadcrumbs, back buttons, bookmarking views, etc.
+-->
+
+*[Content to be added]*

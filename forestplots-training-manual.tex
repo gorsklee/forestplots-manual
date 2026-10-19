@@ -1,0 +1,647 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+]{book}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+% LaTeX preamble for PDF output
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+% ForestPlots green
+\definecolor{fpgreen}{HTML}{2d6a4f}
+
+% Hyperlink colour
+\hypersetup{colorlinks=true, linkcolor=fpgreen, urlcolor=fpgreen, citecolor=fpgreen}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={ForestPlots.net Training Manual},
+  pdfauthor={ForestPlots Team, University of Leeds},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{ForestPlots.net Training Manual}
+\author{ForestPlots Team, University of Leeds}
+\date{2026-10-16}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\chapter*{Welcome}\label{welcome}
+\addcontentsline{toc}{chapter}{Welcome}
+
+Welcome to the \textbf{ForestPlots.net Training Manual}. This guide is designed to help new and existing users of \href{https://forestplots.net}{ForestPlots.net} --- the global network for monitoring tropical forest plots --- to get the most out of the platform.
+
+\section*{How to use this manual}\label{how-to-use-this-manual}
+\addcontentsline{toc}{section}{How to use this manual}
+
+This manual is organised into chapters that follow a natural workflow, from creating an account through to downloading and analysing data. You can read it sequentially or jump to the chapter most relevant to your needs.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{New users} should start with Chapters \ref{introduction} and \ref{getting-started}.
+\item
+  \textbf{Data contributors} will find Chapters \ref{data-entry} and \ref{data-quality} most useful.
+\item
+  \textbf{Data users} seeking to query or download data should head to Chapter \ref{querying-data}.
+\item
+  \textbf{R users} will find the \texttt{RAINFOR} / ForestPlots R package covered in Chapter \ref{r-package}.
+\end{itemize}
+
+\section*{About ForestPlots.net}\label{about-forestplots.net}
+\addcontentsline{toc}{section}{About ForestPlots.net}
+
+ForestPlots.net is a pan-tropical network and database hosting long-term forest inventory data from permanent sample plots across the tropics. It supports research into forest dynamics, carbon stocks, and ecosystem responses to climate change.
+
+\chapter{Introduction}\label{introduction}
+
+\section{What is ForestPlots.net?}\label{what-is-forestplots.net}
+
+\emph{{[}Content to be added{]}}
+
+\section{The science behind the network}\label{the-science-behind-the-network}
+
+\emph{{[}Content to be added{]}}
+
+\section{Key terminology}\label{key-terminology}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Term & Definition \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Plot & \emph{{[}Definition{]}} \\
+Census & \emph{{[}Definition{]}} \\
+Stem & \emph{{[}Definition{]}} \\
+DBH & \emph{{[}Definition{]}} \\
+\end{longtable}
+}
+
+\section{Data ownership and governance}\label{data-ownership-and-governance}
+
+\emph{{[}Content to be added{]}}
+
+\section{How to cite ForestPlots.net}\label{how-to-cite-forestplots.net}
+
+If you use data or the platform in your research, please cite:
+
+\begin{quote}
+\emph{{[}Insert preferred citation here{]}}
+\end{quote}
+
+For data downloaded from specific plots or networks, additional citations may be required. See the Data Download chapter for details.
+
+\chapter{Getting Started}\label{getting-started}
+
+\section{Creating an account}\label{creating-an-account}
+
+\emph{{[}Content to be added{]}}
+
+\section{Logging in}\label{logging-in}
+
+\emph{{[}Content to be added{]}}
+
+\section{Account types and permissions}\label{account-types-and-permissions}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Role & Permissions \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Viewer & \emph{{[}Description{]}} \\
+Contributor & \emph{{[}Description{]}} \\
+Plot Owner & \emph{{[}Description{]}} \\
+Administrator & \emph{{[}Description{]}} \\
+\end{longtable}
+}
+
+\section{Joining a network or group}\label{joining-a-network-or-group}
+
+\emph{{[}Content to be added{]}}
+
+\section{Requesting access to specific plots}\label{requesting-access-to-specific-plots}
+
+\emph{{[}Content to be added{]}}
+
+\section{Your user profile}\label{your-user-profile}
+
+\emph{{[}Content to be added{]}}
+
+\chapter{Navigating the Platform}\label{navigating}
+
+\section{The dashboard}\label{the-dashboard}
+
+\emph{{[}Content to be added{]}}
+
+\section{Finding plots}\label{finding-plots}
+
+\emph{{[}Content to be added{]}}
+
+\section{The map interface}\label{the-map-interface}
+
+\emph{{[}Content to be added{]}}
+
+\section{Plot summary pages}\label{plot-summary-pages}
+
+\emph{{[}Content to be added{]}}
+
+\section{Navigation tips and shortcuts}\label{navigation-tips-and-shortcuts}
+
+\emph{{[}Content to be added{]}}
+
+\chapter{Data Entry}\label{data-entry}
+
+\section{Overview of the data entry workflow}\label{overview-of-the-data-entry-workflow}
+
+\emph{{[}Content to be added{]}}
+
+\section{Creating a new plot}\label{creating-a-new-plot}
+
+\emph{{[}Content to be added{]}}
+
+\section{Adding plot metadata}\label{adding-plot-metadata}
+
+\emph{{[}Content to be added{]}}
+
+\section{Creating a census}\label{creating-a-census}
+
+\emph{{[}Content to be added{]}}
+
+\section{Entering stem-level data}\label{entering-stem-level-data}
+
+\subsection{Species identification}\label{species-identification}
+
+\emph{{[}Content to be added{]}}
+
+\subsection{Measurements}\label{measurements}
+
+\emph{{[}Content to be added{]}}
+
+\subsection{Stem status codes}\label{stem-status-codes}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Code & Meaning \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+A & Alive \\
+D & Dead \\
+R & Recruit \\
+M & Missing \\
+\end{longtable}
+}
+
+\emph{{[}Add further codes as appropriate{]}}
+
+\section{Uploading data in bulk}\label{uploading-data-in-bulk}
+
+\emph{{[}Content to be added{]}}
+
+\section{Editing existing records}\label{editing-existing-records}
+
+\emph{{[}Content to be added{]}}
+
+\chapter{Data Quality and Validation}\label{data-quality}
+
+\section{Why data quality matters}\label{why-data-quality-matters}
+
+\emph{{[}Content to be added{]}}
+
+\section{Automated validation checks}\label{automated-validation-checks}
+
+\emph{{[}Content to be added{]}}
+
+\section{Reviewing validation flags}\label{reviewing-validation-flags}
+
+\emph{{[}Content to be added{]}}
+
+\section{Manual quality review}\label{manual-quality-review}
+
+\emph{{[}Content to be added{]}}
+
+\section{Common data entry errors and how to fix them}\label{common-data-entry-errors-and-how-to-fix-them}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Error & Likely cause & How to fix \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\emph{{[}Error type{]}} & \emph{{[}Cause{]}} & \emph{{[}Fix{]}} \\
+\end{longtable}
+}
+
+\section{Data approval and sign-off}\label{data-approval-and-sign-off}
+
+\emph{{[}Content to be added{]}}
+
+\chapter{Querying and Downloading Data}\label{querying-data}
+
+\section{Overview of the query system}\label{overview-of-the-query-system}
+
+\emph{{[}Content to be added{]}}
+
+\section{Searching for data}\label{searching-for-data}
+
+\emph{{[}Content to be added{]}}
+
+\section{Filtering by plot characteristics}\label{filtering-by-plot-characteristics}
+
+\emph{{[}Content to be added{]}}
+
+\section{Downloading data}\label{downloading-data}
+
+\emph{{[}Content to be added{]}}
+
+\section{Understanding the download files}\label{understanding-the-download-files}
+
+\subsection{File structure}\label{file-structure}
+
+\emph{{[}Content to be added{]}}
+
+\subsection{Key columns}\label{key-columns}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Column & Description & Units \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\texttt{PlotCode} & Unique plot identifier & --- \\
+\texttt{CensusNo} & Census number within a plot & --- \\
+\texttt{Tag} & Individual stem tag number & --- \\
+\texttt{DBH} & Diameter at breast height & cm \\
+\texttt{Status} & Stem status at census & --- \\
+\end{longtable}
+}
+
+\emph{{[}Expand table as needed{]}}
+
+\section{Data use agreements and attribution}\label{data-use-agreements-and-attribution}
+
+\emph{{[}Content to be added{]}}
+
+\chapter{The ForestPlots R Package}\label{r-package}
+
+\section{Installation}\label{installation}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Install from CRAN (if available)}
+\FunctionTok{install.packages}\NormalTok{(}\StringTok{"forestplots"}\NormalTok{)}
+
+\CommentTok{\# Or install the development version from GitHub}
+\CommentTok{\# install.packages("devtools")}
+\NormalTok{devtools}\SpecialCharTok{::}\FunctionTok{install\_github}\NormalTok{(}\StringTok{"ForestPlots/forestplots{-}r"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Authentication}\label{authentication}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(forestplots)}
+
+\CommentTok{\# Authenticate with your credentials}
+\FunctionTok{fp\_auth}\NormalTok{(}\AttributeTok{username =} \StringTok{"your\_username"}\NormalTok{, }\AttributeTok{password =} \StringTok{"your\_password"}\NormalTok{)}
+
+\CommentTok{\# Or use an API token (recommended)}
+\FunctionTok{fp\_auth}\NormalTok{(}\AttributeTok{token =} \StringTok{"your\_api\_token"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Loading data into R}\label{loading-data-into-r}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Download stem data for a specific plot}
+\NormalTok{stems }\OtherTok{\textless{}{-}} \FunctionTok{fp\_get\_stems}\NormalTok{(}\AttributeTok{plot\_code =} \StringTok{"BOL{-}01"}\NormalTok{)}
+
+\CommentTok{\# Download all plots you have access to}
+\NormalTok{my\_plots }\OtherTok{\textless{}{-}} \FunctionTok{fp\_get\_plots}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Common analyses}\label{common-analyses}
+
+\subsection{Calculating basal area}\label{calculating-basal-area}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# }\AlertTok{TODO}\CommentTok{: Add working example}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Estimating above-ground biomass (AGB)}\label{estimating-above-ground-biomass-agb}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# }\AlertTok{TODO}\CommentTok{: Add working example using BIOMASS or equivalent}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Computing stem growth and mortality rates}\label{computing-stem-growth-and-mortality-rates}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# }\AlertTok{TODO}\CommentTok{: Add working example}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Working with the downloaded CSV files}\label{working-with-the-downloaded-csv-files}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Load stem data}
+\NormalTok{stems }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"stems.csv"}\NormalTok{)}
+
+\CommentTok{\# Load plot metadata}
+\NormalTok{plots }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"plots.csv"}\NormalTok{)}
+
+\CommentTok{\# Join tables}
+\FunctionTok{library}\NormalTok{(dplyr)}
+\NormalTok{data }\OtherTok{\textless{}{-}} \FunctionTok{left\_join}\NormalTok{(stems, plots, }\AttributeTok{by =} \StringTok{"PlotCode"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Further resources}\label{further-resources}
+
+\begin{itemize}
+\tightlist
+\item
+  Package documentation: \emph{{[}link{]}}
+\item
+  GitHub repository: \emph{{[}link{]}}
+\item
+  Example workflows: \emph{{[}link{]}}
+\end{itemize}
+
+\chapter{Advanced Features}\label{advanced-features}
+
+\section{Managing a network or group}\label{managing-a-network-or-group}
+
+\emph{{[}Content to be added{]}}
+
+\section{Plot documents and attachments}\label{plot-documents-and-attachments}
+
+\emph{{[}Content to be added{]}}
+
+\section{Species lists and taxonomic management}\label{species-lists-and-taxonomic-management}
+
+\emph{{[}Content to be added{]}}
+
+\section{API access}\label{api-access}
+
+\subsection{Authentication}\label{authentication-1}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Example API token request}
+\ExtensionTok{curl} \AttributeTok{{-}X}\NormalTok{ POST https://forestplots.net/api/v1/auth }\DataTypeTok{\textbackslash{}}
+  \AttributeTok{{-}H} \StringTok{"Content{-}Type: application/json"} \DataTypeTok{\textbackslash{}}
+  \AttributeTok{{-}d} \StringTok{\textquotesingle{}\{"username": "your\_username", "password": "your\_password"\}\textquotesingle{}}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Example API calls}\label{example-api-calls}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# }\AlertTok{TODO}\CommentTok{: Add R examples using httr or the ForestPlots R package\textquotesingle{}s API layer}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Exporting data for other platforms}\label{exporting-data-for-other-platforms}
+
+\emph{{[}Content to be added{]}}
+
+\section{Notifications and alerts}\label{notifications-and-alerts}
+
+\emph{{[}Content to be added{]}}
+
+\chapter{Frequently Asked Questions}\label{faq}
+
+\section{Account and access}\label{account-and-access}
+
+\textbf{Q: I haven't received my account verification email --- what should I do?}
+
+\emph{{[}Answer{]}}
+
+\textbf{Q: How do I reset my password?}
+
+\emph{{[}Answer{]}}
+
+\textbf{Q: I can see a plot on the map but cannot access its data --- why?}
+
+\emph{{[}Answer{]}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Data entry}\label{data-entry-1}
+
+\textbf{Q: What should I do if a stem has died between censuses?}
+
+\emph{{[}Answer{]}}
+
+\textbf{Q: Can I enter data from multiple censuses at the same time?}
+
+\emph{{[}Answer{]}}
+
+\textbf{Q: How do I handle a re-tagged stem where the original tag was lost?}
+
+\emph{{[}Answer{]}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Data quality}\label{data-quality-1}
+
+\textbf{Q: I received a validation error for a DBH value I am confident is correct --- what do I do?}
+
+\emph{{[}Answer{]}}
+
+\textbf{Q: Can I override a validation flag?}
+
+\emph{{[}Answer{]}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Querying and downloading}\label{querying-and-downloading}
+
+\textbf{Q: I can see a plot but the download button is greyed out --- why?}
+
+\emph{{[}Answer{]}}
+
+\textbf{Q: How do I request access to data that is under embargo?}
+
+\emph{{[}Answer{]}}
+
+\textbf{Q: What format should I cite when using downloaded data in a publication?}
+
+\emph{{[}Answer{]}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{R package}\label{r-package-1}
+
+\textbf{Q: The R package says my credentials are invalid, but I can log in on the website --- what's wrong?}
+
+\emph{{[}Answer{]}}
+
+\textbf{Q: How do I report a bug in the R package?}
+
+\emph{{[}Answer{]}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Getting further help}\label{getting-further-help}
+
+If your question is not answered here, please contact the ForestPlots.net team:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Email:} \emph{{[}support email{]}}
+\item
+  \textbf{Help forum:} \emph{{[}link{]}}
+\item
+  \textbf{GitHub Issues (R package):} \emph{{[}link{]}}
+\end{itemize}
+
+\bibliography{references.bib,packages.bib}
+
+\end{document}

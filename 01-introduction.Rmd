@@ -1,0 +1,49 @@
+# Introduction {#introduction}
+
+## What is ForestPlots.net?
+
+<!--
+  TODO: Provide a brief history and overview of the ForestPlots.net network.
+  Cover: founding, geographic scope, number of plots, affiliated networks (RAINFOR, AfriTRON, T-FORCES, etc.)
+-->
+
+*[Content to be added]*
+
+## The science behind the network
+
+<!--
+  TODO: Explain the ecological and scientific rationale for long-term forest monitoring.
+  Cover: forest dynamics, carbon cycling, biodiversity monitoring, climate change responses.
+-->
+
+*[Content to be added]*
+
+## Key terminology
+
+<!--
+  TODO: Define core terms used throughout the manual and on the platform.
+  Suggested terms: plot, subplot, census, stem, DBH, species code, functional group, growth form.
+-->
+
+| Term | Definition |
+|------|------------|
+| Plot | *[Definition]* |
+| Census | *[Definition]* |
+| Stem | *[Definition]* |
+| DBH | *[Definition]* |
+
+## Data ownership and governance
+
+<!--
+  TODO: Describe data sharing policies, ownership, attribution requirements, and the ForestPlots data governance framework.
+-->
+
+*[Content to be added]*
+
+## How to cite ForestPlots.net
+
+If you use data or the platform in your research, please cite:
+
+> *[Insert preferred citation here]*
+
+For data downloaded from specific plots or networks, additional citations may be required. See the Data Download chapter for details.
