@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Query Checks | forestplots-training-manual.knit</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.48 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Query Checks | forestplots-training-manual.knit" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Query Checks | forestplots-training-manual.knit" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="before-you-start.html"/>
+<link rel="next" href="liana-data.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<!-- Google Fonts (optional — remove if offline build needed) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">ForestPlots.net Training Manual</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="before-you-start.html"><a href="before-you-start.html"><i class="fa fa-check"></i>Before you start</a></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html"><i class="fa fa-check"></i>Query Checks</a>
+<ul>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#what-are-the-query-checks"><i class="fa fa-check"></i>What are the query checks?</a></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#verify-important-plot-infromation"><i class="fa fa-check"></i>Verify important plot infromation</a>
+<ul>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#read-all-plot-notes"><i class="fa fa-check"></i>1. Read all plot notes</a></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#create-and-define-preferred-plot-views"><i class="fa fa-check"></i>2. Create and define preferred plot views</a></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#check-the-plot-area"><i class="fa fa-check"></i>3. Check the plot area</a></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#check-census-dates"><i class="fa fa-check"></i>4. Check census dates</a></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#click-refresh-plot-views"><i class="fa fa-check"></i>5. Click ‘refresh plot views’</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#run-the-query-checks"><i class="fa fa-check"></i>Run the query checks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html"><i class="fa fa-check"></i>Liana data</a>
+<ul>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#collecting-liana-data"><i class="fa fa-check"></i>Collecting liana data</a></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#prepare-data-for-upload"><i class="fa fa-check"></i>Prepare data for upload</a>
+<ul>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#tag-no-versus-new-tag-no-column"><i class="fa fa-check"></i><code>Tag No</code> versus <code>New Tag No</code> column</a></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#have-you-filled-most-affected-tree-and-host-trees-columns-correctly"><i class="fa fa-check"></i>Have you filled <code>Most Affected Tree</code> and <code>Host trees</code> columns correctly?</a></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#fill-in-the-flag3-and-flag4-column-for-alive-lianas"><i class="fa fa-check"></i>Fill in the flag3 and flag4 column for alive lianas!</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#upload-data"><i class="fa fa-check"></i>Upload data</a></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#sign-off-data"><i class="fa fa-check"></i>Sign off data</a>
+<ul>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#fix-the-inconsistencies-in-the-liana-data"><i class="fa fa-check"></i>Fix the inconsistencies in the liana data</a></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#no-inconsistencies-in-the-liana-data"><i class="fa fa-check"></i>No inconsistencies in the liana data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#all-done"><i class="fa fa-check"></i>All done!</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://forestplots.net" target="_blank">ForestPlots.net</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="query-checks" class="section level1 hasAnchor">
+<h1>Query Checks<a href="query-checks.html#query-checks" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="what-are-the-query-checks" class="section level2 hasAnchor">
+<h2>What are the query checks?<a href="query-checks.html#what-are-the-query-checks" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>After you have completed the tree checks, it is important to run the query checks to look at the overall plot level dynamics.</p>
+<p>Before we look at the query library to perform some calculations, let’s verify some information about our plots.</p>
+</div>
+<div id="verify-important-plot-infromation" class="section level2 hasAnchor">
+<h2>Verify important plot infromation<a href="query-checks.html#verify-important-plot-infromation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="read-all-plot-notes" class="section level3 hasAnchor">
+<h3>1. Read all plot notes<a href="query-checks.html#read-all-plot-notes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Some valuable information may be hiding in the plot notes. Read the plot notes to ensure you have an entire picture of what may be happening in the plot before you view the outputs of the query library and freak out.</p>
+</div>
+<div id="create-and-define-preferred-plot-views" class="section level3 hasAnchor">
+<h3>2. Create and define preferred plot views<a href="query-checks.html#create-and-define-preferred-plot-views" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Sometimes we only want to look at a piece of a plot. For whatever reason this may be, you can create a plot view on ForestPlots to ensure that you are viewing the correct part of your plot. If you are unfamiliar with plot views, you can read about them <a href="https://forestplots.net/upload/ManualsEnglish/ForestPlotsManual_2019_sm.pdf">here</a>.</p>
+<p>It is important to know that when performing queries in the query library we should use the ‘Preferred Plot View’ = TRUE.</p>
+</div>
+<div id="check-the-plot-area" class="section level3 hasAnchor">
+<h3>3. Check the plot area<a href="query-checks.html#check-the-plot-area" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Has the plot area been defined correctly on the Details page of the plot and in the plot view?</p>
+</div>
+<div id="check-census-dates" class="section level3 hasAnchor">
+<h3>4. Check census dates<a href="query-checks.html#check-census-dates" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Census dates will directly impact the calculations we will shortly make. If the census dates are incorrect, you will get very weird values. Double check the census dates!</p>
+</div>
+<div id="click-refresh-plot-views" class="section level3 hasAnchor">
+<h3>5. Click ‘refresh plot views’<a href="query-checks.html#click-refresh-plot-views" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The plot views need to be refreshed after you have modified POMs or data in the plot. Be sure to go to the Plot View and click the ‘refresh plot views’ button or your results will be weird.</p>
+</div>
+</div>
+<div id="run-the-query-checks" class="section level2 hasAnchor">
+<h2>Run the query checks<a href="query-checks.html#run-the-query-checks" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In the query checks stage, there are 4 main parts to verify:</p>
+<ol style="list-style-type: decimal">
+<li>Basal area</li>
+<li>Above Ground Biomass (AGB)</li>
+<li>Above-Ground Wood Production (AGWP)</li>
+<li>Turnover</li>
+</ol>
+<p>We are running these queries to ensure that the plot dynamics fall within a normal range and follow the general trend of the plot. If the plot values fall outside the range or stray from the general trend, then this may mean that we missed something during the tree checks or that the tree checks did not pick something up. However, it is also possible that the outcomes are completely normal, and this is when on the ground knowledge is vital to inform us of these strange values.</p>
+<p>With this context, let’s begin.</p>
+<p>To run these queries, we will be using the query library. For each query,</p>
+<ul>
+<li>Click the bars tab on the left-side of the ForestPlots screen</li>
+<li>Choose the private tab</li>
+<li>Choose the necessary query:
+<ul>
+<li>Basal area: click ‘Basal Area’, then ’Plot Basal Area by Census (m2 ha-1)</li>
+<li>AGB: click ‘Biomass’, then the appropriate allometric equation (we tend to use AGB Chave 2014 for moist forests)</li>
+<li>AGWP: click ‘Wood Productivity’, then the appropriate allometric equation (we tend to use AGWP Chave Moist (Ht Weibull, Regional) for moist forests)</li>
+<li>Turnover: click ‘Turnover’, then ‘Stem Dynamics by Interval’</li>
+</ul></li>
+<li>Choose the necessary plots</li>
+<li>Save as Excel</li>
+</ul>
+<p>The typical range of outputs for each query can be found in the <a href="https://forestplots.net/upload/UploadTracker_Template_2026.xlsx">ForestPlots tracker</a> in the tracker_headers tab with the associated green section (Q7 to Q10).</p>
+<p>If values that fall outside of these typical ranges are found, then confirm that the Automated POM Change Wizard was run, the Plot Views have been refreshed, and the Census Dates are correct. If all of these are verified, then we should look at the data more deeply. If this occurs, please contact your fellow ForestPlots team member to guide you through this process.</p>
+<p>We will work to add more information to this section shortly!</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="before-you-start.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="liana-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": true,
+    "facebook": false,
+    "twitter": false,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["forestplots-training-manual.pdf", "forestplots-training-manual.epub"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>

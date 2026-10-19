@@ -1,7 +1,6 @@
 # Bookdown output directories
 _book/
 _bookdown_files/
-docs/
 
 # R-generated files
 packages.bib
