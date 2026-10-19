@@ -27,6 +27,8 @@ Welcome to the **ForestPlots.net Training Manual**. This guide is designed to he
 
 This manual is organised into chapters that follow a natural workflow, from creating an account through to downloading and analysing data. You can read it sequentially or jump to the chapter most relevant to your needs.
 
+The following is all soon to be created!
+
 - **New users** should start with Chapters \@ref(introduction) and \@ref(getting-started).
 - **Data contributors** will find Chapters \@ref(data-entry) and \@ref(data-quality) most useful.
 - **Data users** seeking to query or download data should head to Chapter \@ref(querying-data).
