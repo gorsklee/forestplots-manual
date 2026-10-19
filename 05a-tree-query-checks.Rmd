@@ -1,0 +1,63 @@
+# Query Checks
+
+## What are the query checks?
+
+After you have completed the tree checks, it is important to run the query checks to look at the overall plot level dynamics.
+
+Before we look at the query library to perform some calculations, let's verify some information about our plots.
+
+## Verify important plot infromation
+
+### 1. Read all plot notes
+
+Some valuable information may be hiding in the plot notes. Read the plot notes to ensure you have an entire picture of what may be happening in the plot before you view the outputs of the query library and freak out.
+
+### 2. Create and define preferred plot views
+
+Sometimes we only want to look at a piece of a plot. For whatever reason this may be, you can create a plot view on ForestPlots to ensure that you are viewing the correct part of your plot. If you are unfamiliar with plot views, you can read about them [here](https://forestplots.net/upload/ManualsEnglish/ForestPlotsManual_2019_sm.pdf). 
+
+It is important to know that when performing queries in the query library we should use the 'Preferred Plot View' = TRUE.
+
+### 3. Check the plot area
+
+Has the plot area been defined correctly on the Details page of the plot and in the plot view?
+
+### 4. Check census dates
+
+Census dates will directly impact the calculations we will shortly make. If the census dates are incorrect, you will get very weird values. Double check the census dates!
+
+### 5. Click 'refresh plot views'
+
+The plot views need to be refreshed after you have modified POMs or data in the plot. Be sure to go to the Plot View and click the 'refresh plot views' button or your results will be weird.
+
+## Run the query checks
+
+In the query checks stage, there are 4 main parts to verify:
+
+1. Basal area
+2. Above Ground Biomass (AGB)
+3. Above-Ground Wood Production (AGWP) 
+4. Turnover
+
+We are running these queries to ensure that the plot dynamics fall within a normal range and follow the general trend of the plot. If the plot values fall outside the range or stray from the general trend, then this may mean that we missed something during the tree checks or that the tree checks did not pick something up. However, it is also possible that the outcomes are completely normal, and this is when on the ground knowledge is vital to inform us of these strange values.
+
+With this context, let's begin.
+
+To run these queries, we will be using the query library. For each query,
+
+* Click the bars tab on the left-side of the ForestPlots screen
+* Choose the private tab
+* Choose the necessary query:
+  * Basal area: click 'Basal Area', then 'Plot Basal Area by Census (m2 ha-1)
+  * AGB: click 'Biomass', then the appropriate allometric equation (we tend to use AGB Chave 2014 for moist forests)
+  * AGWP: click 'Wood Productivity', then the appropriate allometric equation (we tend to use AGWP Chave Moist (Ht Weibull, Regional) for moist forests)
+  * Turnover: click 'Turnover', then 'Stem Dynamics by Interval'
+* Choose the necessary plots
+* Save as Excel
+
+The typical range of outputs for each query can be found in the [ForestPlots tracker](https://forestplots.net/upload/UploadTracker_Template_2026.xlsx) in the tracker_headers tab with the associated green section (Q7 to Q10).
+
+If values that fall outside of these typical ranges are found, then confirm that the Automated POM Change Wizard was run, the Plot Views have been refreshed, and the Census Dates are correct. If all of these are verified, then we should look at the data more deeply. If this occurs, please contact your fellow ForestPlots team member to guide you through this process. 
+
+We will work to add more information to this section shortly!
+
