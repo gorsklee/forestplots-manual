@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Tree Data Dictionary | ForestPlots.net Training Manual</title>
+  <meta name="description" content="A practical training guide for working with data on ForestPlots.net" />
+  <meta name="generator" content="bookdown 0.48 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Tree Data Dictionary | ForestPlots.net Training Manual" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://github.com/gorsklee/forestplots-manual/images/forestplots-logo.png" />
+  <meta property="og:description" content="A practical training guide for working with data on ForestPlots.net" />
+  <meta name="github-repo" content="gorsklee/forestplots-manual" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Tree Data Dictionary | ForestPlots.net Training Manual" />
+  
+  <meta name="twitter:description" content="A practical training guide for working with data on ForestPlots.net" />
+  <meta name="twitter:image" content="https://github.com/gorsklee/forestplots-manual/images/forestplots-logo.png" />
+
+<meta name="author" content="ForestPlots Team" />
+
+
+<meta name="date" content="2026-10-23" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="liana-data.html"/>
+<link rel="next" href="faq.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link href="libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.34.0/datatables.js"></script>
+<link href="libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="libs/jszip-1.13.6/jszip.min.js"></script>
+<link href="libs/dt-ext-buttons-1.13.6/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="libs/dt-ext-buttons-1.13.6/js/dataTables.buttons.min.js"></script>
+<script src="libs/dt-ext-buttons-1.13.6/js/buttons.html5.min.js"></script>
+<script src="libs/dt-ext-buttons-1.13.6/js/buttons.colVis.min.js"></script>
+<script src="libs/dt-ext-buttons-1.13.6/js/buttons.print.min.js"></script>
+<link href="libs/dt-ext-fixedheader-1.13.6/css/fixedHeader.dataTables.min.css" rel="stylesheet" />
+<script src="libs/dt-ext-fixedheader-1.13.6/js/dataTables.fixedHeader.min.js"></script>
+<link href="libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+<script src="libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+<!-- Google Fonts (optional — remove if offline build needed) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">ForestPlots.net Training Manual</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-forestplots.net"><i class="fa fa-check"></i>About ForestPlots.net</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="before-you-start.html"><a href="before-you-start.html"><i class="fa fa-check"></i>Before you start</a></li>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html"><i class="fa fa-check"></i>Digitising Data</a>
+<ul>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html#how-to-digitise"><i class="fa fa-check"></i>How to digitise</a></li>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html#verification-checklist"><i class="fa fa-check"></i>Verification Checklist</a></li>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html#next-steps"><i class="fa fa-check"></i>Next steps</a></li>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html#automatically-check-data"><i class="fa fa-check"></i>Automatically check data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="data-upload.html"><a href="data-upload.html"><i class="fa fa-check"></i>Data Upload</a>
+<ul>
+<li class="chapter" data-level="" data-path="data-upload.html"><a href="data-upload.html#data-upload-format"><i class="fa fa-check"></i>Data upload format</a></li>
+<li class="chapter" data-level="" data-path="data-upload.html"><a href="data-upload.html#how-to-upload-the-data"><i class="fa fa-check"></i>How to upload the data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html"><i class="fa fa-check"></i>Query Checks</a>
+<ul>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#what-are-the-query-checks"><i class="fa fa-check"></i>What are the query checks?</a></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#verify-important-plot-infromation"><i class="fa fa-check"></i>Verify important plot infromation</a>
+<ul>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#read-all-plot-notes"><i class="fa fa-check"></i>1. Read all plot notes</a></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#create-and-define-preferred-plot-views"><i class="fa fa-check"></i>2. Create and define preferred plot views</a></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#check-the-plot-area"><i class="fa fa-check"></i>3. Check the plot area</a></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#check-census-dates"><i class="fa fa-check"></i>4. Check census dates</a></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#click-refresh-plot-views"><i class="fa fa-check"></i>5. Click ‘refresh plot views’</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#run-the-query-checks"><i class="fa fa-check"></i>Run the query checks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html"><i class="fa fa-check"></i>Liana data</a>
+<ul>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#collecting-liana-data"><i class="fa fa-check"></i>Collecting liana data</a></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#prepare-data-for-upload"><i class="fa fa-check"></i>Prepare data for upload</a>
+<ul>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#tag-no-versus-new-tag-no-column"><i class="fa fa-check"></i><code>Tag No</code> versus <code>New Tag No</code> column</a></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#have-you-filled-most-affected-tree-and-host-trees-columns-correctly"><i class="fa fa-check"></i>Have you filled <code>Most Affected Tree</code> and <code>Host trees</code> columns correctly?</a></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#fill-in-the-flag3-and-flag4-column-for-alive-lianas"><i class="fa fa-check"></i>Fill in the flag3 and flag4 column for alive lianas!</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#upload-data"><i class="fa fa-check"></i>Upload data</a></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#sign-off-data"><i class="fa fa-check"></i>Sign off data</a>
+<ul>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#fix-the-inconsistencies-in-the-liana-data"><i class="fa fa-check"></i>Fix the inconsistencies in the liana data</a></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#no-inconsistencies-in-the-liana-data"><i class="fa fa-check"></i>No inconsistencies in the liana data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#all-done"><i class="fa fa-check"></i>All done!</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="tree-data-dictionary.html"><a href="tree-data-dictionary.html"><i class="fa fa-check"></i>Tree Data Dictionary</a></li>
+<li class="chapter" data-level="" data-path="faq.html"><a href="faq.html"><i class="fa fa-check"></i>Common Issues &amp; FAQs</a>
+<ul>
+<li class="chapter" data-level="" data-path="faq.html"><a href="faq.html#data-entry"><i class="fa fa-check"></i>Data entry</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://forestplots.net" target="_blank">ForestPlots.net</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">ForestPlots.net Training Manual</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="tree-data-dictionary" class="section level1 hasAnchor">
+<h1>Tree Data Dictionary<a href="tree-data-dictionary.html#tree-data-dictionary" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This page covers every column used with ForestPlots tree data.
+Use the <strong>search box</strong> to find any column by name or keyword, or use the <strong>filter arrows</strong>
+on any column heading to narrow by template, requirement level, or units.</p>
+<p>The <strong>Required</strong> column uses four categories:</p>
+<ul>
+<li><strong>Always</strong> — must be filled in for every row in that template.</li>
+<li><strong>Conditional</strong> — required only when a specific condition is met (see the <em>Condition</em> column).</li>
+<li><strong>Optional</strong> — may be left blank.</li>
+<li><strong>Dry Forest</strong> — only relevant for Dry Forest plots; leave blank otherwise.</li>
+</ul>
+<p>See the <a href="#tree-data-faqs">Common Issues and Frequently Asked Questions</a> for more information.</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-634d1a485773ac4502a9" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-634d1a485773ac4502a9">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons","FixedHeader"],"data":[["Plot Code","TreeID","Tag No","New tag number","New stem grouping / Stem grouping / Stem tag grouping","T1","T2","X","Y","Family","original identification","Species","Subspecies","Variety","Tree Notes","D0","D","DPOMtminus1","POM0","POM","Extra D0","Extra D","Extra DPOMtminus1","Extra POM0","Extra POM","Flag1","Flag2","Flag3","Flag4","Extra Flag3","Extra Flag4","LI","CI","CF","CD1","CD2","Height","Flag5","Height Broken At","Census Notes","voucher code","voucher collected"],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"mm","mm","mm","mm","mm","mm","mm","mm","mm","mm",null,null,null,null,null,null,null,null,null,"m","m","m",null,"m",null,null,null],["ForestPlots.net code for the plot being uploaded","Unique identifier of the stem in the ForestPlots database","Original field tag number for the stem","Current field tag number of the stem","Identifier linking stems of a multi-stemmed tree","Subplot","Secondary subplot identifier","X coordinate","Y coordinate","Plant family name following APG III","Original species/vernacular name","Accepted Latin binomial name","Subspecies epithet","Variety epithet","Identification comments","Original diameter","Current correct diameter at POM","Diameter at previous POM","Original point of measurement","Point of measurement","Original Extra Diameter","Extra diameter","Extra diameter at previous POM","Original extra point of measurement (POM) for Extra D","Extra point of measurement","Alive/dead status code","Mode of death code","Diameter measurement technique","Post-field data management","Extra D measurement technique","Extra D post-field management","Liana infestation index","Canopy illumination index","Crown formation code","Crown diameter 1","Crown diameter 2","Total tree height","Height measurement technique","Break height","Stem comments","Voucher specimen code","Whether voucher was collected"],["Conditional","Conditional","Conditional","Conditional","Optional","Optional","Optional","Optional","Optional","Always","Always","Always","Optional","Optional","Optional","Conditional","Always","Conditional","Conditional","Always","Dry Forest","Dry Forest","Dry Forest","Dry Forest","Dry Forest","Always","Always","Conditional","Conditional","Dry Forest","Dry Forest","Optional","Optional","Optional","Optional","Optional","Optional","Conditional","Optional","Optional","Conditional","Conditional"],["Required when uploading multiple new single census plots","Required for recensus stems","Required for uploading multi-census data","If uploading  new plot, fill this with all tag numbers. If uploading an existing or multi-census plot, use this column to record the tag number of recruits and if a stem changes tag.",null,null,null,null,null,null,null,null,null,null,null,"Required when uploading multiple censuses",null,"If POM changed from previous census","Required when uploading multiple censuses",null,null,null,"If Extra POM changed from previous census",null,null,null,null,"Required if alive","Required if alive","Required if alive","Required if alive",null,null,null,null,null,null,"If Height filled in","Record if stem is broken",null,"If voucher collected filled in","If voucher code filled in"],["3 letters – 2 numbers (e.g. ABC-12)","Integer assigned by ForestPlots","As recorded in the field","As recorded in the field","Single letter/number","Number/code","Number/code","As recorded","As recorded","One word, capitalized","Text","Genus species","Text","Text","Free text","Integer >=0","Integer >=0","Integer >=0","Integer","Integer","Integer >=0","Integer >=0","Integer >=0","Integer","Integer","RAINFOR code","RAINFOR code","RAINFOR code","RAINFOR code","DRYFLOR & RAINFOR code","DRYFLOR & RAINFOR code","Code","Code","Code","Numeric","Numeric","Numeric","RAINFOR code","Numeric","Free text","constructed from 3 letters representing the initials of the collector and the collection number","1/0/blank"],["If the Plot Code is unknown confirm with a member of the ForestPlots team",null,"Should be populated for all stems. If not uploading multi-census data, use new tag number",null,"For multi-stemmed trees, particularly useful for Dry Forests. The column name changes  depending on what data is being uploaded (check the templates). Any single letter or number may be used to identify and therefore link stem(s) belonging to a single multi-stemmed tree (for example, all stems belonging to the first mulit-stemmed tree could all have \"A\" in the column, all stems of the second multi-stemmed tree \"B\"s, etc). When the excel sheet is uploaded, the system will link all stems with the same 'Stem grouping' and assign a unique identifier 'Stem Group ID' which will then display in all downloads alongside the 'Stem grouping' (tag number of the largest diameter of the linked stems).","Subplot system: number or code of the primary subplot where the tree is located (as collected in the field, optional). For a standard 1 ha plot, T1 corresponds to the 20 x 20 subplot division","Additional subplot system: number or code of the secondary subplot (as collected in the field, optional)",null,null,"Use Indet if unknown","Use Indet indet if unknown","Use Indet indet if unknown",null,null,"Any general comments specific to the identification of the tree. This can only be uploaded during the first census when a plot is established.","D0 is never changed. It is considered the original diameter and will not be altered and should always match the original value of the stem as recorded on the field sheet.","Since the original diameter is stored in D0, D sometimes may be altered. If it is, then Flag4 must indicate what change was made. If Flag1=k, diameter should be 0.","Should be filled if Flag4 contains a 6.","POM0 is never changed as it is considered the original POM.",null,"For Dry Forests ONLY: measured at Extra POM. May be left blank. For more information see DryFlor Field Manual https://doi.org/10.5521/forestplots.net/2020_4","For Dry Forests ONLY: measured at Extra POMr.  In most cases Extra D will be the same as Extra D0; if different, the method of quality control will be recorded in Extra Flag4. May be left blank. For more information see DryFlor Field Manual https://doi.org/10.5521/forestplots.net/2020_4","For Dry Forests ONLY: The Extra diameter at the previous ExtraPOM, if the Extra POM height changed that census, leave blank if no Extra POM change that census","For Dry Forests ONLY: As originally recorded in the field: May be left blank","For Dry Forests ONLY: the Extra POM is usually at basal height. May be left blank. For more information see DryFlor Field Manual https://doi.org/10.5521/forestplots.net/2020_4","Options can be found here: https://www.forestplots.net/upload/ManualsEnglish/RAINFOR_data_codes_EN.pdf. Ensure to write 'n' for a new recruit, 'a' can only be used with 'n' or 'h', and 'c' and 'd' cannot be used together. When the stem is dead, write '0'.","Options for mode of death can be found here: https://www.forestplots.net/upload/ManualsEnglish/RAINFOR_data_codes_EN.pdf. When a tree is alive, write '1'. When a stem is dead, only write one option from each category of rules (for example: mrs).","Options for diameter meaurement technique can be found here: https://www.forestplots.net/upload/ManualsEnglish/RAINFOR_data_codes_EN.pdf","Flag4 is typically 0 when a tree is recorded normally. If the POM was changed write, 60. Otherwise, if the diameter column is at all modified, this column is used to indicate how the D value was modified. Options for post field data management https://www.forestplots.net/upload/ManualsEnglish/RAINFOR_data_codes_EN.pdf Required if tree is alive","For more information see Appendix 1 DryFlor Field Manual https://doi.org/10.5521/forestplots.net/2020_4","For more information see Appendix 1 DryFlor Field Manual https://doi.org/10.5521/forestplots.net/2020_4","Must use one of the codes provided here: https://www.forestplots.net/upload/ManualsEnglish/CrownLianaProtocols_EN.pdf","Must use one of the codes provided here: https://www.forestplots.net/upload/ManualsEnglish/CrownLianaProtocols_EN.pdf","Must use one of the codes provided here: https://www.forestplots.net/upload/ManualsEnglish/CrownLianaProtocols_EN.pdf","CD1 is measured orthogonal to CD2, i.e. at a direction this is at right-angles to CD2. More information here: https://forestplots.net/upload/ManualsEnglish/Crown_measurement_protocol_LoubotaPanzou_Feldpausch_07_2020_English.pdf","CD2 is measured orthogonal to CD1, i.e. at a direction this is at right-angles to CD1. More information here: https://forestplots.net/upload/ManualsEnglish/Crown_measurement_protocol_LoubotaPanzou_Feldpausch_07_2020_English.pdf","leave blank if not measured","Options for Flag5 listed here: https://www.forestplots.net/upload/ManualsEnglish/RAINFOR_data_codes_EN.pdf","If stem is broken write 'k' or 'b' in Flag1.","Comments specific to the stem during that census","If collecting vouchers, ForestPlots uses a system of the collectors first name and a number system. A user must be linked with the collector code for upload to work.","write \"1\" if voucher was collected from this individual, 0 if the voucher is used as a reference, leave empty if no voucher is associated with this stem."]],"container":"<table class=\"compact stripe hover\">\n  <thead>\n    <tr>\n      <th>Column<\/th>\n      <th>Units<\/th>\n      <th>Description<\/th>\n      <th>Required<\/th>\n      <th>Condition<\/th>\n      <th>Format<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":60,"dom":"Blfti","fixedHeader":true,"scrollX":true,"buttons":[{"extend":"csv","text":"Download CSV"},{"extend":"excel","text":"Download Excel"},{"extend":"colvis","text":"Show / hide columns"}],"autoWidth":false,"columnDefs":[{"width":"160px","targets":0},{"width":"45px","targets":1},{"width":"260px","targets":2},{"width":"95px","targets":3},{"width":"220px","targets":4},{"width":"200px","targets":5},{"width":"220px","targets":6},{"className":"dt-center","targets":[1,3]},{"targets":[2,4,5,6],"className":"dt-wrap"},{"name":"Column","targets":0},{"name":"Units","targets":1},{"name":"Description","targets":2},{"name":"Required","targets":3},{"name":"Condition","targets":4},{"name":"Format","targets":5},{"name":"Notes","targets":6}],"language":{"search":"Search all columns:","zeroRecords":"No columns match your search."},"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,25,50,60,100],"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-weight':'bold','background-color':value == \"Always\" ? \"#C8E6C9\" : value == \"Conditional\" ? \"#FFF9C4\" : value == \"Optional\" ? \"#E0E0E0\" : value == \"Dry Forest\" ? \"#BBDEFB\" : null});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'color':value == null ? \"#BBBBBB\" : null});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="liana-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="faq.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": true,
+    "facebook": false,
+    "twitter": false,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>

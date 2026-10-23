@@ -1,6 +1,6 @@
 ---
 title: "ForestPlots.net Training Manual"
-author: "ForestPlots Team, University of Leeds"
+author: "ForestPlots Team"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
@@ -8,11 +8,10 @@ bibliography: [references.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 description: |
-  A comprehensive training manual for using the ForestPlots.net platform,
-  covering data entry, querying, quality control, and analysis.
+  A practical training guide for working with data on ForestPlots.net
 cover-image: images/forestplots-logo.png
-url: 'https://your-org.github.io/forestplots-manual'
-github-repo: your-org/forestplots-manual
+url: 'https://github.com/gorsklee/forestplots-manual'
+github-repo: gorsklee/forestplots-manual
 ---
 
 # Welcome {-}
@@ -21,18 +20,9 @@ github-repo: your-org/forestplots-manual
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 ```
 
-Welcome to the **ForestPlots.net Training Manual**. This guide is designed to help new and existing users of [ForestPlots.net](https://forestplots.net) — the global network for monitoring tropical forest plots — to get the most out of the platform.
+Welcome to the **ForestPlots.net Training Manual**. This is a practical guide for people working with data on [ForestPlots.net](https://forestplots.net) — the global network for monitoring tropical forest plots across the tropics.
 
-## How to use this manual {-}
-
-This manual is organised into chapters that follow a natural workflow, from creating an account through to downloading and analysing data. You can read it sequentially or jump to the chapter most relevant to your needs.
-
-The following is all soon to be created!
-
-- **New users** should start with Chapters \@ref(introduction) and \@ref(getting-started).
-- **Data contributors** will find Chapters \@ref(data-entry) and \@ref(data-quality) most useful.
-- **Data users** seeking to query or download data should head to Chapter \@ref(querying-data).
-- **R users** will find the `RAINFOR` / ForestPlots R package covered in Chapter \@ref(r-package).
+This manual is used alongside training sessions with the ForestPlots team. If you have been directed here, your ForestPlots contact will point you to the chapter relevant to your current task. See the **Before you start** chapter for an overview of what is currently covered.
 
 ## About ForestPlots.net {-}
 
@@ -41,6 +31,6 @@ ForestPlots.net is a pan-tropical network and database hosting long-term forest 
 ```{r include=FALSE}
 # Automatically create a bib database for R packages used in this book
 knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'DT'
 ), 'packages.bib')
 ```

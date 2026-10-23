@@ -1,0 +1,70 @@
+# Digitising Data {#digitising-data}
+
+For this section we assume:
+
+* data was collected using a ForestPlots paper field sheet,
+* you are digitising one census of data, and
+* the field sheet has been completed by hand.
+
+If the above assumptions do not describe your case, continue reading this section, but you may need additional resources to help you depending on your circumstance.
+
+## How to digitise
+
+We recommend that two people work together to digitise the data. One person reads the data row by row while the other types.
+
+It is important to copy the data exactly as it is written onto the ForestPlots field sheet in Excel.
+
+**Do not correct, standardise, or interpret values at this stage.** Any issues identified now can be addressed later. Simply make a note of the issue in the `Census Notes` column.
+
+It is important that you type the data onto the original Excel file because:
+
+1. It uses the exact column names that ForestPlots recognises and
+2. If you recensused a plot, it contains a very important column called `Tree ID` which enables the data you collected to be matched to the correct tree in the database.
+
+<button class="btn" onclick="var d=document.getElementById('no-excel'); d.style.display = d.style.display === 'none' ? 'block' : 'none'">
+  Don't have the Excel file version of the field sheet? Click here!
+</button>
+
+<div id="no-excel" class="note" style="display:none">
+
+  If you do not have the original Excel file, you can redownload the field sheet on ForestPlots following
+  <a href="https://www.youtube.com/watch?v=1Tkdu_Vgilk&feature=youtu.be">this video</a>
+  or ask the person who generated the field sheets for you to resend them.
+
+  If you established a plot, collected data for the first time, and there is no existing data in ForestPlots, then use <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fsecure.forestplots.net%2FSiteTemplates%2Fen%2FPlotImportTemplate.xlsx&wdOrigin=BROWSELINK">this template</a>.
+
+</div>
+
+## Verification Checklist
+
+After digitising your data, check that:
+
+* All required columns are present (including original identification)
+* An original identification column exists and is filled in
+* Recruits were typed and have their tag recorded in the New Tag No column
+* Diameter and POM are recorded in millimeters (mm), not centimeters (cm)
+* All of the following columns are completely filled in with no blanks: Family, original identification, Species, D, POM, Flag1, Flag2, Flag3, Flag4
+* Any stems that changed tag have their new tag written in the New Tag No column
+* If the plot already exists on ForestPlots, TreeIDs are present and have not been modified
+* All optional columns have been filled in correctly according to the [Tree Data Dictionary](#tree-data-dictionary)
+
+Although every column should be checked, users most commonly have questions about:
+
+* New Tag No
+* Original Identification
+* Flag columns
+
+Common issues and formatting requirements for these columns are described in the [FAQ section](#faq).
+
+## Next steps
+
+Once you have verified all columns and corrected any issues, you are ready to upload the data. Either send the spreadsheet to a member of the ForestPlots team or visit the [Data Upload](#data-upload) section to upload the data yourself. 
+
+> [!IMPORTANT]
+> You can only upload data yourself after a ForestPlots' team member has trained you. You also need the right level of permissions to upload data which you will receive after training. If you'd like to upload your own data, please contact a member of the ForestPlots team.*
+
+## Automatically check data
+
+If you are familiar with R, ForestPlots has a private set of functions that you can use to check your data before upload. If you would like access, please contact a member of the ForestPlots team for the appropriate access and training. In order to use the repository, you need a GitHub account and to be familiar with R and RStudio.
+
+Hopefully, a link will soon be added here to enable you to check your data with the click of a button! No code needed! Stay tuned.

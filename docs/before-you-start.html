@@ -5,28 +5,25 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Before you start | ForestPlots.net Training Manual</title>
-  <meta name="description" content="<p>A comprehensive training manual for using the ForestPlots.net platform,
-covering data entry, querying, quality control, and analysis.</p>" />
+  <meta name="description" content="A practical training guide for working with data on ForestPlots.net" />
   <meta name="generator" content="bookdown 0.48 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Before you start | ForestPlots.net Training Manual" />
   <meta property="og:type" content="book" />
-  <meta property="og:image" content="https://your-org.github.io/forestplots-manual/images/forestplots-logo.png" />
-  <meta property="og:description" content="<p>A comprehensive training manual for using the ForestPlots.net platform,
-covering data entry, querying, quality control, and analysis.</p>" />
-  <meta name="github-repo" content="your-org/forestplots-manual" />
+  <meta property="og:image" content="https://github.com/gorsklee/forestplots-manual/images/forestplots-logo.png" />
+  <meta property="og:description" content="A practical training guide for working with data on ForestPlots.net" />
+  <meta name="github-repo" content="gorsklee/forestplots-manual" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Before you start | ForestPlots.net Training Manual" />
   
-  <meta name="twitter:description" content="<p>A comprehensive training manual for using the ForestPlots.net platform,
-covering data entry, querying, quality control, and analysis.</p>" />
-  <meta name="twitter:image" content="https://your-org.github.io/forestplots-manual/images/forestplots-logo.png" />
+  <meta name="twitter:description" content="A practical training guide for working with data on ForestPlots.net" />
+  <meta name="twitter:image" content="https://github.com/gorsklee/forestplots-manual/images/forestplots-logo.png" />
 
-<meta name="author" content="ForestPlots Team, University of Leeds" />
+<meta name="author" content="ForestPlots Team" />
 
 
-<meta name="date" content="2026-10-19" />
+<meta name="date" content="2026-10-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -34,7 +31,7 @@ covering data entry, querying, quality control, and analysis.</p>" />
   
   
 <link rel="prev" href="index.html"/>
-<link rel="next" href="query-checks.html"/>
+<link rel="next" href="digitising-data.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -55,6 +52,27 @@ covering data entry, querying, quality control, and analysis.</p>" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link href="libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.34.0/datatables.js"></script>
+<link href="libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="libs/jszip-1.13.6/jszip.min.js"></script>
+<link href="libs/dt-ext-buttons-1.13.6/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="libs/dt-ext-buttons-1.13.6/js/dataTables.buttons.min.js"></script>
+<script src="libs/dt-ext-buttons-1.13.6/js/buttons.html5.min.js"></script>
+<script src="libs/dt-ext-buttons-1.13.6/js/buttons.colVis.min.js"></script>
+<script src="libs/dt-ext-buttons-1.13.6/js/buttons.print.min.js"></script>
+<link href="libs/dt-ext-fixedheader-1.13.6/css/fixedHeader.dataTables.min.css" rel="stylesheet" />
+<script src="libs/dt-ext-fixedheader-1.13.6/js/dataTables.fixedHeader.min.js"></script>
+<link href="libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+<script src="libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
 <!-- Google Fonts (optional — remove if offline build needed) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Source+Code+Pro&display=swap" rel="stylesheet">
@@ -84,10 +102,21 @@ covering data entry, querying, quality control, and analysis.</p>" />
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
 <ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-use-this-manual"><i class="fa fa-check"></i>How to use this manual</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-forestplots.net"><i class="fa fa-check"></i>About ForestPlots.net</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="before-you-start.html"><a href="before-you-start.html"><i class="fa fa-check"></i>Before you start</a></li>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html"><i class="fa fa-check"></i>Digitising Data</a>
+<ul>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html#how-to-digitise"><i class="fa fa-check"></i>How to digitise</a></li>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html#verification-checklist"><i class="fa fa-check"></i>Verification Checklist</a></li>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html#next-steps"><i class="fa fa-check"></i>Next steps</a></li>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html#automatically-check-data"><i class="fa fa-check"></i>Automatically check data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="data-upload.html"><a href="data-upload.html"><i class="fa fa-check"></i>Data Upload</a>
+<ul>
+<li class="chapter" data-level="" data-path="data-upload.html"><a href="data-upload.html#data-upload-format"><i class="fa fa-check"></i>Data upload format</a></li>
+<li class="chapter" data-level="" data-path="data-upload.html"><a href="data-upload.html#how-to-upload-the-data"><i class="fa fa-check"></i>How to upload the data</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html"><i class="fa fa-check"></i>Query Checks</a>
 <ul>
 <li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#what-are-the-query-checks"><i class="fa fa-check"></i>What are the query checks?</a></li>
@@ -118,6 +147,11 @@ covering data entry, querying, quality control, and analysis.</p>" />
 </ul></li>
 <li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#all-done"><i class="fa fa-check"></i>All done!</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="tree-data-dictionary.html"><a href="tree-data-dictionary.html"><i class="fa fa-check"></i>Tree Data Dictionary</a></li>
+<li class="chapter" data-level="" data-path="faq.html"><a href="faq.html"><i class="fa fa-check"></i>Common Issues &amp; FAQs</a>
+<ul>
+<li class="chapter" data-level="" data-path="faq.html"><a href="faq.html#data-entry"><i class="fa fa-check"></i>Data entry</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://forestplots.net" target="_blank">ForestPlots.net</a></li>
 
@@ -140,8 +174,22 @@ covering data entry, querying, quality control, and analysis.</p>" />
             <section class="normal" id="section-">
 <div id="before-you-start" class="section level1 hasAnchor">
 <h1>Before you start<a href="before-you-start.html#before-you-start" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This document is living and is being created currently for the benefit of all users. There already exists a ForestPlots user manual, but we hope that this document can accompany that to guide users through case examples to work with their data. It is extremely important that a member of the ForestPlots team first shows you how to work with the data before you attempt to do this on your own.</p>
-<p>In the meantime, your feedback is especially important so if you find that it is not meeting your needs, please inform a member of the ForestPlots team so that we can improve this document.</p>
+<p>This manual is a practical companion to your ForestPlots training. Each chapter covers a specific step in the data workflow and is designed to be used alongside a session with a member of the ForestPlots team.</p>
+<p>This manual currently covers:</p>
+<ul>
+<li>Digitising Data — how to transcribe field data into the correct Excel format</li>
+<li>Data Upload — how to identify and prepare the right upload format for your data</li>
+<li>Query Checks — how to verify your plot dynamics after upload</li>
+<li>Liana Data — the equivalent workflow for liana data (assumes familiarity with tree data)</li>
+<li>Tree Data Dictionary — a reference for every column in the tree data templates</li>
+<li>Common Issues &amp; FAQs — answers to the most frequent questions</li>
+</ul>
+<p>You do not need to read this manual from start to finish. Your ForestPlots contact will point you to the chapter relevant to your current task.</p>
+<blockquote>
+<p>[!IMPORTANT]
+You must be trained by a member of the ForestPlots team before uploading data independently. Certain steps also require specific permissions, which you will receive after training.*</p>
+</blockquote>
+<p>This is a living document that is updated regularly. If anything is unclear or missing, please let a member of the ForestPlots team know.</p>
 
 </div>
             </section>
@@ -150,7 +198,7 @@ covering data entry, querying, quality control, and analysis.</p>" />
         </div>
       </div>
 <a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="query-checks.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="digitising-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -192,7 +240,7 @@ gitbook.start({
     "link": null,
     "text": null
   },
-  "download": ["forestplots-training-manual.pdf", "forestplots-training-manual.epub"],
+  "download": null,
   "search": {
     "engine": "fuse",
     "options": null

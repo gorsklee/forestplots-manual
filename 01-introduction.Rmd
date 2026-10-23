@@ -1,5 +1,19 @@
 # Before you start
 
-This document is living and is being created currently for the benefit of all users. There already exists a ForestPlots user manual, but we hope that this document can accompany that to guide users through case examples to work with their data. It is extremely important that a member of the ForestPlots team first shows you how to work with the data before you attempt to do this on your own.
+This manual is a practical companion to your ForestPlots training. Each chapter covers a specific step in the data workflow and is designed to be used alongside a session with a member of the ForestPlots team.
 
-In the meantime, your feedback is especially important so if you find that it is not meeting your needs, please inform a member of the ForestPlots team so that we can improve this document.
+This manual currently covers:
+
+* Digitising Data — how to transcribe field data into the correct Excel format
+* Data Upload — how to identify and prepare the right upload format for your data
+* Query Checks — how to verify your plot dynamics after upload
+* Liana Data — the equivalent workflow for liana data (assumes familiarity with tree data)
+* Tree Data Dictionary — a reference for every column in the tree data templates
+* Common Issues & FAQs — answers to the most frequent questions
+
+You do not need to read this manual from start to finish. Your ForestPlots contact will point you to the chapter relevant to your current task.
+
+> [!IMPORTANT]
+> You must be trained by a member of the ForestPlots team before uploading data independently. Certain steps also require specific permissions, which you will receive after training.*
+
+This is a living document that is updated regularly. If anything is unclear or missing, please let a member of the ForestPlots team know.

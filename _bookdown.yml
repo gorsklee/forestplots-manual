@@ -8,5 +8,9 @@ delete_merged_file: true
 rmd_files:
   - index.Rmd
   - 01-introduction.Rmd
+  - 03a-digitising-data.Rmd
+  - 03b-data-upload.Rmd
   - 05a-tree-query-checks.Rmd
   - 05b-lianas.Rmd
+  - 03c-data-dictionary.Rmd
+  - 09-faq.Rmd

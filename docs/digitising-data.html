@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Digitising Data | ForestPlots.net Training Manual</title>
+  <meta name="description" content="A practical training guide for working with data on ForestPlots.net" />
+  <meta name="generator" content="bookdown 0.48 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Digitising Data | ForestPlots.net Training Manual" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://github.com/gorsklee/forestplots-manual/images/forestplots-logo.png" />
+  <meta property="og:description" content="A practical training guide for working with data on ForestPlots.net" />
+  <meta name="github-repo" content="gorsklee/forestplots-manual" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Digitising Data | ForestPlots.net Training Manual" />
+  
+  <meta name="twitter:description" content="A practical training guide for working with data on ForestPlots.net" />
+  <meta name="twitter:image" content="https://github.com/gorsklee/forestplots-manual/images/forestplots-logo.png" />
+
+<meta name="author" content="ForestPlots Team" />
+
+
+<meta name="date" content="2026-10-23" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="before-you-start.html"/>
+<link rel="next" href="data-upload.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link href="libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.34.0/datatables.js"></script>
+<link href="libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="libs/jszip-1.13.6/jszip.min.js"></script>
+<link href="libs/dt-ext-buttons-1.13.6/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="libs/dt-ext-buttons-1.13.6/js/dataTables.buttons.min.js"></script>
+<script src="libs/dt-ext-buttons-1.13.6/js/buttons.html5.min.js"></script>
+<script src="libs/dt-ext-buttons-1.13.6/js/buttons.colVis.min.js"></script>
+<script src="libs/dt-ext-buttons-1.13.6/js/buttons.print.min.js"></script>
+<link href="libs/dt-ext-fixedheader-1.13.6/css/fixedHeader.dataTables.min.css" rel="stylesheet" />
+<script src="libs/dt-ext-fixedheader-1.13.6/js/dataTables.fixedHeader.min.js"></script>
+<link href="libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+<script src="libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+<!-- Google Fonts (optional — remove if offline build needed) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">ForestPlots.net Training Manual</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-forestplots.net"><i class="fa fa-check"></i>About ForestPlots.net</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="before-you-start.html"><a href="before-you-start.html"><i class="fa fa-check"></i>Before you start</a></li>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html"><i class="fa fa-check"></i>Digitising Data</a>
+<ul>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html#how-to-digitise"><i class="fa fa-check"></i>How to digitise</a></li>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html#verification-checklist"><i class="fa fa-check"></i>Verification Checklist</a></li>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html#next-steps"><i class="fa fa-check"></i>Next steps</a></li>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html#automatically-check-data"><i class="fa fa-check"></i>Automatically check data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="data-upload.html"><a href="data-upload.html"><i class="fa fa-check"></i>Data Upload</a>
+<ul>
+<li class="chapter" data-level="" data-path="data-upload.html"><a href="data-upload.html#data-upload-format"><i class="fa fa-check"></i>Data upload format</a></li>
+<li class="chapter" data-level="" data-path="data-upload.html"><a href="data-upload.html#how-to-upload-the-data"><i class="fa fa-check"></i>How to upload the data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html"><i class="fa fa-check"></i>Query Checks</a>
+<ul>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#what-are-the-query-checks"><i class="fa fa-check"></i>What are the query checks?</a></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#verify-important-plot-infromation"><i class="fa fa-check"></i>Verify important plot infromation</a>
+<ul>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#read-all-plot-notes"><i class="fa fa-check"></i>1. Read all plot notes</a></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#create-and-define-preferred-plot-views"><i class="fa fa-check"></i>2. Create and define preferred plot views</a></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#check-the-plot-area"><i class="fa fa-check"></i>3. Check the plot area</a></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#check-census-dates"><i class="fa fa-check"></i>4. Check census dates</a></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#click-refresh-plot-views"><i class="fa fa-check"></i>5. Click ‘refresh plot views’</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#run-the-query-checks"><i class="fa fa-check"></i>Run the query checks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html"><i class="fa fa-check"></i>Liana data</a>
+<ul>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#collecting-liana-data"><i class="fa fa-check"></i>Collecting liana data</a></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#prepare-data-for-upload"><i class="fa fa-check"></i>Prepare data for upload</a>
+<ul>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#tag-no-versus-new-tag-no-column"><i class="fa fa-check"></i><code>Tag No</code> versus <code>New Tag No</code> column</a></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#have-you-filled-most-affected-tree-and-host-trees-columns-correctly"><i class="fa fa-check"></i>Have you filled <code>Most Affected Tree</code> and <code>Host trees</code> columns correctly?</a></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#fill-in-the-flag3-and-flag4-column-for-alive-lianas"><i class="fa fa-check"></i>Fill in the flag3 and flag4 column for alive lianas!</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#upload-data"><i class="fa fa-check"></i>Upload data</a></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#sign-off-data"><i class="fa fa-check"></i>Sign off data</a>
+<ul>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#fix-the-inconsistencies-in-the-liana-data"><i class="fa fa-check"></i>Fix the inconsistencies in the liana data</a></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#no-inconsistencies-in-the-liana-data"><i class="fa fa-check"></i>No inconsistencies in the liana data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="liana-data.html"><a href="liana-data.html#all-done"><i class="fa fa-check"></i>All done!</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="tree-data-dictionary.html"><a href="tree-data-dictionary.html"><i class="fa fa-check"></i>Tree Data Dictionary</a></li>
+<li class="chapter" data-level="" data-path="faq.html"><a href="faq.html"><i class="fa fa-check"></i>Common Issues &amp; FAQs</a>
+<ul>
+<li class="chapter" data-level="" data-path="faq.html"><a href="faq.html#data-entry"><i class="fa fa-check"></i>Data entry</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://forestplots.net" target="_blank">ForestPlots.net</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">ForestPlots.net Training Manual</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="digitising-data" class="section level1 hasAnchor">
+<h1>Digitising Data<a href="digitising-data.html#digitising-data" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>For this section we assume:</p>
+<ul>
+<li>data was collected using a ForestPlots paper field sheet,</li>
+<li>you are digitising one census of data, and</li>
+<li>the field sheet has been completed by hand.</li>
+</ul>
+<p>If the above assumptions do not describe your case, continue reading this section, but you may need additional resources to help you depending on your circumstance.</p>
+<div id="how-to-digitise" class="section level2 hasAnchor">
+<h2>How to digitise<a href="digitising-data.html#how-to-digitise" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We recommend that two people work together to digitise the data. One person reads the data row by row while the other types.</p>
+<p>It is important to copy the data exactly as it is written onto the ForestPlots field sheet in Excel.</p>
+<p><strong>Do not correct, standardise, or interpret values at this stage.</strong> Any issues identified now can be addressed later. Simply make a note of the issue in the <code>Census Notes</code> column.</p>
+<p>It is important that you type the data onto the original Excel file because:</p>
+<ol style="list-style-type: decimal">
+<li>It uses the exact column names that ForestPlots recognises and</li>
+<li>If you recensused a plot, it contains a very important column called <code>Tree ID</code> which enables the data you collected to be matched to the correct tree in the database.</li>
+</ol>
+<button class="btn" onclick="var d=document.getElementById(&#39;no-excel&#39;); d.style.display = d.style.display === &#39;none&#39; ? &#39;block&#39; : &#39;none&#39;">
+Don’t have the Excel file version of the field sheet? Click here!
+</button>
+<div id="no-excel" class="note" style="display:none">
+<p>If you do not have the original Excel file, you can redownload the field sheet on ForestPlots following
+<a href="https://www.youtube.com/watch?v=1Tkdu_Vgilk&feature=youtu.be">this video</a>
+or ask the person who generated the field sheets for you to resend them.</p>
+<p>If you established a plot, collected data for the first time, and there is no existing data in ForestPlots, then use <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fsecure.forestplots.net%2FSiteTemplates%2Fen%2FPlotImportTemplate.xlsx&wdOrigin=BROWSELINK">this template</a>.</p>
+</div>
+</div>
+<div id="verification-checklist" class="section level2 hasAnchor">
+<h2>Verification Checklist<a href="digitising-data.html#verification-checklist" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>After digitising your data, check that:</p>
+<ul>
+<li>All required columns are present (including original identification)</li>
+<li>An original identification column exists and is filled in</li>
+<li>Recruits were typed and have their tag recorded in the New Tag No column</li>
+<li>Diameter and POM are recorded in millimeters (mm), not centimeters (cm)</li>
+<li>All of the following columns are completely filled in with no blanks: Family, original identification, Species, D, POM, Flag1, Flag2, Flag3, Flag4</li>
+<li>Any stems that changed tag have their new tag written in the New Tag No column</li>
+<li>If the plot already exists on ForestPlots, TreeIDs are present and have not been modified</li>
+<li>All optional columns have been filled in correctly according to the <a href="tree-data-dictionary.html#tree-data-dictionary">Tree Data Dictionary</a></li>
+</ul>
+<p>Although every column should be checked, users most commonly have questions about:</p>
+<ul>
+<li>New Tag No</li>
+<li>Original Identification</li>
+<li>Flag columns</li>
+</ul>
+<p>Common issues and formatting requirements for these columns are described in the <a href="faq.html#faq">FAQ section</a>.</p>
+</div>
+<div id="next-steps" class="section level2 hasAnchor">
+<h2>Next steps<a href="digitising-data.html#next-steps" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Once you have verified all columns and corrected any issues, you are ready to upload the data. Either send the spreadsheet to a member of the ForestPlots team or visit the <a href="data-upload.html#data-upload">Data Upload</a> section to upload the data yourself.</p>
+<blockquote>
+<p>[!IMPORTANT]
+You can only upload data yourself after a ForestPlots’ team member has trained you. You also need the right level of permissions to upload data which you will receive after training. If you’d like to upload your own data, please contact a member of the ForestPlots team.*</p>
+</blockquote>
+</div>
+<div id="automatically-check-data" class="section level2 hasAnchor">
+<h2>Automatically check data<a href="digitising-data.html#automatically-check-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If you are familiar with R, ForestPlots has a private set of functions that you can use to check your data before upload. If you would like access, please contact a member of the ForestPlots team for the appropriate access and training. In order to use the repository, you need a GitHub account and to be familiar with R and RStudio.</p>
+<p>Hopefully, a link will soon be added here to enable you to check your data with the click of a button! No code needed! Stay tuned.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="before-you-start.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data-upload.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": true,
+    "facebook": false,
+    "twitter": false,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>

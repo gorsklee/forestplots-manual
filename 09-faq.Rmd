@@ -1,81 +1,107 @@
-# Frequently Asked Questions {#faq}
+# Common Issues & FAQs {#faq}
 
-## Account and access
+## Data entry {-}
 
-**Q: I haven't received my account verification email — what should I do?**
+<details>
+<summary>What is the difference between `Tag No` and `New Tag No`?</summary>
 
-*[Answer]*
+`Tag No` contains all of the tag numbers of the stems, but what is the purpose of the `New Tag No` column?
 
-**Q: How do I reset my password?**
+The `New Tag No` column is used to update the tag numbers in Forestplots. When uploading data, only the `New Tag No` column will be used, not `Tag No`. 
 
-*[Answer]*
+Whether you are uploading lianas/trees for the first time or uploading an additional census, use the `New Tag No` column.
 
-**Q: I can see a plot on the map but cannot access its data — why?**
+When uploading stems for the first time, there are no records of tag numbers so you must write all of the tag numbers in the `New Tag No` column. 
 
-*[Answer]*
+When uploading an additional census, there are existing tag numbers in the database. Therefore, you do not need to upload all of the tag numbers again. Instead, you only need to upload the tag numbers for 
 
----
+1. new recruits (stems that have no records of a tag number) and  
+2. stems that have had their tag number changed.  
 
-## Data entry
+Therefore, fill in the `New Tag No` column for all new recruits or when a stem's tag number changes. There is no need to fill in the `New Tag No` column for a stem whose tag remains the same.
 
-**Q: What should I do if a stem has died between censuses?**
+</details>
 
-*[Answer]*
+<details
+<summary>Do I need to add an original identification column?</summary>
 
-**Q: Can I enter data from multiple censuses at the same time?**
+Yes! The `original identification` column enables you to write the identification that was recorded in the field. Because the Family and Species columns take a very specific format (using the indet system), the original identification column gives you a place to record the identification exactly as it was recorded in the field.
 
-*[Answer]*
+</details>
 
-**Q: How do I handle a re-tagged stem where the original tag was lost?**
+<details>
+<summary>How do I fill in Flag3 and Flag4?</summary>
 
-*[Answer]*
+It is commonly forgotten to fill in the Flag3 and Flag4 columns. However, ForestPlots requires that these columns are filled in when the stem is alive. 
 
----
+As a quick summary, Flag3 describes how the measurement was taken and Flag4 describes whether the value was modified. For most cases, you can fill in the Flag3 and Flag4 columns as 0. However, if the diameter was measured with something other than a tape measure or was retrospectively modified, then view the Flag options for [trees here](https://forestplots.net/upload/ManualsEnglish/RAINFOR_data_codes_EN.pdf) and [lianas here](https://forestplots.net/upload/ManualsEnglish/RAINFOR_LianaDataCodes_EN.pdf). 
 
-## Data quality
+Then fill in the column with the correct code.
 
-**Q: I received a validation error for a DBH value I am confident is correct — what do I do?**
-
-*[Answer]*
-
-**Q: Can I override a validation flag?**
-
-*[Answer]*
+</details>
 
 ---
 
-## Querying and downloading
+<!-- ## Data entry -->
 
-**Q: I can see a plot but the download button is greyed out — why?**
+<!-- **Q: What should I do if a stem has died between censuses?** -->
 
-*[Answer]*
+<!-- *[Answer]* -->
 
-**Q: How do I request access to data that is under embargo?**
+<!-- **Q: Can I enter data from multiple censuses at the same time?** -->
 
-*[Answer]*
+<!-- *[Answer]* -->
 
-**Q: What format should I cite when using downloaded data in a publication?**
+<!-- **Q: How do I handle a re-tagged stem where the original tag was lost?** -->
 
-*[Answer]*
+<!-- *[Answer]* -->
 
----
+<!-- --- -->
 
-## R package
+<!-- ## Data quality -->
 
-**Q: The R package says my credentials are invalid, but I can log in on the website — what's wrong?**
+<!-- **Q: I received a validation error for a DBH value I am confident is correct — what do I do?** -->
 
-*[Answer]*
+<!-- *[Answer]* -->
 
-**Q: How do I report a bug in the R package?**
+<!-- **Q: Can I override a validation flag?** -->
 
-*[Answer]*
+<!-- *[Answer]* -->
 
----
+<!-- --- -->
 
-## Getting further help
+<!-- ## Querying and downloading -->
 
-If your question is not answered here, please contact the ForestPlots.net team:
+<!-- **Q: I can see a plot but the download button is greyed out — why?** -->
 
-- **Email:** *[support email]*
-- **Help forum:** *[link]*
-- **GitHub Issues (R package):** *[link]*
+<!-- *[Answer]* -->
+
+<!-- **Q: How do I request access to data that is under embargo?** -->
+
+<!-- *[Answer]* -->
+
+<!-- **Q: What format should I cite when using downloaded data in a publication?** -->
+
+<!-- *[Answer]* -->
+
+<!-- --- -->
+
+<!-- ## R package -->
+
+<!-- **Q: The R package says my credentials are invalid, but I can log in on the website — what's wrong?** -->
+
+<!-- *[Answer]* -->
+
+<!-- **Q: How do I report a bug in the R package?** -->
+
+<!-- *[Answer]* -->
+
+<!-- --- -->
+
+<!-- ## Getting further help -->
+
+<!-- If your question is not answered here, please contact the ForestPlots.net team: -->
+
+<!-- - **Email:** *[support email]* -->
+<!-- - **Help forum:** *[link]* -->
+<!-- - **GitHub Issues (R package):** *[link]* -->
