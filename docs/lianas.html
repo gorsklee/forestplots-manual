@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Liana data | ForestPlots.net Training Manual</title>
+  <meta name="description" content="A practical training guide for working with data on ForestPlots.net" />
+  <meta name="generator" content="bookdown 0.48 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Liana data | ForestPlots.net Training Manual" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://github.com/gorsklee/forestplots-manual/images/forestplots-logo.png" />
+  <meta property="og:description" content="A practical training guide for working with data on ForestPlots.net" />
+  <meta name="github-repo" content="gorsklee/forestplots-manual" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Liana data | ForestPlots.net Training Manual" />
+  
+  <meta name="twitter:description" content="A practical training guide for working with data on ForestPlots.net" />
+  <meta name="twitter:image" content="https://github.com/gorsklee/forestplots-manual/images/forestplots-logo.png" />
+
+<meta name="author" content="ForestPlots Team" />
+
+
+<meta name="date" content="2026-10-26" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="query-checks.html"/>
+<link rel="next" href="tree-data-dictionary.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link href="libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.34.0/datatables.js"></script>
+<link href="libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="libs/jszip-1.13.6/jszip.min.js"></script>
+<link href="libs/dt-ext-buttons-1.13.6/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="libs/dt-ext-buttons-1.13.6/js/dataTables.buttons.min.js"></script>
+<script src="libs/dt-ext-buttons-1.13.6/js/buttons.html5.min.js"></script>
+<script src="libs/dt-ext-buttons-1.13.6/js/buttons.colVis.min.js"></script>
+<script src="libs/dt-ext-buttons-1.13.6/js/buttons.print.min.js"></script>
+<link href="libs/dt-ext-fixedheader-1.13.6/css/fixedHeader.dataTables.min.css" rel="stylesheet" />
+<script src="libs/dt-ext-fixedheader-1.13.6/js/dataTables.fixedHeader.min.js"></script>
+<link href="libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+<script src="libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+<!-- Google Fonts (optional — remove if offline build needed) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">ForestPlots.net Training Manual</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-forestplots.net"><i class="fa fa-check"></i>About ForestPlots.net</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="before-you-start.html"><a href="before-you-start.html"><i class="fa fa-check"></i>Before you start</a></li>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html"><i class="fa fa-check"></i>Digitising Data</a>
+<ul>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html#how-to-digitise"><i class="fa fa-check"></i>How to digitise</a></li>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html#verification-checklist"><i class="fa fa-check"></i>Verification Checklist</a></li>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html#next-steps"><i class="fa fa-check"></i>Next steps</a></li>
+<li class="chapter" data-level="" data-path="digitising-data.html"><a href="digitising-data.html#automatically-check-data"><i class="fa fa-check"></i>Automatically check data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="data-upload.html"><a href="data-upload.html"><i class="fa fa-check"></i>Data Upload</a>
+<ul>
+<li class="chapter" data-level="" data-path="data-upload.html"><a href="data-upload.html#data-upload-format"><i class="fa fa-check"></i>Data upload format</a></li>
+<li class="chapter" data-level="" data-path="data-upload.html"><a href="data-upload.html#how-to-upload-the-data"><i class="fa fa-check"></i>How to upload the data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html"><i class="fa fa-check"></i>Query Checks</a>
+<ul>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#what-are-the-query-checks"><i class="fa fa-check"></i>What are the query checks?</a></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#step-1-verify-important-plot-information"><i class="fa fa-check"></i>Step 1: Verify important plot information</a></li>
+<li class="chapter" data-level="" data-path="query-checks.html"><a href="query-checks.html#step-2-run-the-query-checks"><i class="fa fa-check"></i>Step 2: Run the query checks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="lianas.html"><a href="lianas.html"><i class="fa fa-check"></i>Liana data</a>
+<ul>
+<li class="chapter" data-level="" data-path="lianas.html"><a href="lianas.html#collecting-liana-data"><i class="fa fa-check"></i>Collecting liana data</a></li>
+<li class="chapter" data-level="" data-path="lianas.html"><a href="lianas.html#prepare-data-for-upload"><i class="fa fa-check"></i>Prepare data for upload</a>
+<ul>
+<li class="chapter" data-level="" data-path="lianas.html"><a href="lianas.html#tag-no-versus-new-tag-no-column"><i class="fa fa-check"></i><code>Tag No</code> versus <code>New Tag No</code> column</a></li>
+<li class="chapter" data-level="" data-path="lianas.html"><a href="lianas.html#have-you-filled-most-affected-tree-and-host-trees-columns-correctly"><i class="fa fa-check"></i>Have you filled <code>Most Affected Tree</code> and <code>Host trees</code> columns correctly?</a></li>
+<li class="chapter" data-level="" data-path="lianas.html"><a href="lianas.html#fill-in-the-flag3-and-flag4-column-for-alive-lianas"><i class="fa fa-check"></i>Fill in the flag3 and flag4 column for alive lianas!</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="lianas.html"><a href="lianas.html#upload-data"><i class="fa fa-check"></i>Upload data</a></li>
+<li class="chapter" data-level="" data-path="lianas.html"><a href="lianas.html#sign-off-data"><i class="fa fa-check"></i>Sign off data</a>
+<ul>
+<li class="chapter" data-level="" data-path="lianas.html"><a href="lianas.html#fix-the-inconsistencies-in-the-liana-data"><i class="fa fa-check"></i>Fix the inconsistencies in the liana data</a></li>
+<li class="chapter" data-level="" data-path="lianas.html"><a href="lianas.html#no-inconsistencies-in-the-liana-data"><i class="fa fa-check"></i>No inconsistencies in the liana data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="lianas.html"><a href="lianas.html#all-done"><i class="fa fa-check"></i>All done!</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="tree-data-dictionary.html"><a href="tree-data-dictionary.html"><i class="fa fa-check"></i>Tree Data Dictionary</a></li>
+<li class="chapter" data-level="" data-path="faq.html"><a href="faq.html"><i class="fa fa-check"></i>Common Issues &amp; FAQs</a>
+<ul>
+<li class="chapter" data-level="" data-path="faq.html"><a href="faq.html#data-entry"><i class="fa fa-check"></i>Data entry</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://forestplots.net" target="_blank">ForestPlots.net</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">ForestPlots.net Training Manual</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="lianas" class="section level1 hasAnchor">
+<h1>Liana data<a href="lianas.html#lianas" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="collecting-liana-data" class="section level2 hasAnchor">
+<h2>Collecting liana data<a href="lianas.html#collecting-liana-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To collect liana data for a new plot, you can use a <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fsecure.forestplots.net%2FSiteTemplates%2Fen%2FLianaCensusImportTemplate.xlsx&amp;wdOrigin=BROWSELINK">liana fieldsheet</a>.</p>
+<p>If you already have existing liana data, then generate a liana fieldsheet on ForestPlots from within your plot. See below!</p>
+<p> </p>
+<center>
+<img src="images/generate-liana-fieldsheet.jpg" />
+</center>
+<p> </p>
+</div>
+<div id="prepare-data-for-upload" class="section level2 hasAnchor">
+<h2>Prepare data for upload<a href="lianas.html#prepare-data-for-upload" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Data must be in the exact correct format before being uploaded to ForestPlots. So first and foremost, ensure you have all the necessary columns and that they are spelled exactly how they are listed on the <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fsecure.forestplots.net%2FSiteTemplates%2Fen%2FLianaCensusImportTemplate.xlsx&amp;wdOrigin=BROWSELINK">liana fieldsheet</a>.</p>
+<p>To understand how to fill in each column, view the Definitions tab of the <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fsecure.forestplots.net%2FSiteTemplates%2Fen%2FLianaCensusImportTemplate.xlsx&amp;wdOrigin=BROWSELINK">liana fieldsheet</a>.</p>
+<p>If you still encounter issues, here is some information to help address some of the most common mistakes that people make:</p>
+<div id="tag-no-versus-new-tag-no-column" class="section level3 hasAnchor">
+<h3><code>Tag No</code> versus <code>New Tag No</code> column<a href="lianas.html#tag-no-versus-new-tag-no-column" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><code>Tag No</code> contains all of the tag numbers of the liana stems, but what is the purpose of the <code>New Tag No</code> column?</p>
+<p>The <code>New Tag No</code> column is used to update the tag numbers of stems in Forestplots. When uploading data, only the <code>New Tag No</code> column will be used, not <code>Tag No</code>.</p>
+<p>Whether you are uploading lianas for the first time or uploading an additional liana census, use the <code>New Tag No</code> column.</p>
+<p>When uploading lianas for the first time, there are no records of tag numbers so you must write all of the tag numbers in the <code>New Tag No</code> column.</p>
+<p>When uploading an additional liana census, there are existing tag numbers in the database. Therefore, you do not need to upload all of the tag numbers again. Instead, you only need to upload the tag numbers for</p>
+<ol style="list-style-type: decimal">
+<li>new recruits (stems that have no records of a tag number) and<br />
+</li>
+<li>stems that have had their tag number changed.<br />
+Therefore, fill in the <code>New Tag No</code> column for all new recruits or when a liana’s tag number changes. There is no need to fill in the <code>New Tag No</code> column for a stem whose tag remains the same.</li>
+</ol>
+</div>
+<div id="have-you-filled-most-affected-tree-and-host-trees-columns-correctly" class="section level3 hasAnchor">
+<h3>Have you filled <code>Most Affected Tree</code> and <code>Host trees</code> columns correctly?<a href="lianas.html#have-you-filled-most-affected-tree-and-host-trees-columns-correctly" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The <code>Most Affected Tree</code> and <code>Host trees</code> column must contain the Tree ID of the tree you are referencing, not the Tag No. </p>
+<p>Most people find this frustrating because the field sheet gives this value as the tag number and not the Tree ID. The reason for this is that as you can imagine the tag number is more helpful in the field than the Tree ID. But if the Tree ID is not given to you in the field sheet how do you find it?</p>
+<p>To get the Tree ID, you can go to the Vegetation tab of your plot, click Trees, and search the Tag No in this section and copy the Tree ID from here.</p>
+<p> </p>
+<center>
+<img src="images/finding-TreeID.png" />
+</center>
+<p> </p>
+<p>You can also download a Plot Dump and find the tree and Tree ID there.</p>
+</div>
+<div id="fill-in-the-flag3-and-flag4-column-for-alive-lianas" class="section level3 hasAnchor">
+<h3>Fill in the flag3 and flag4 column for alive lianas!<a href="lianas.html#fill-in-the-flag3-and-flag4-column-for-alive-lianas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>It is commonly forgotten to fill in the Flag3 and Flag4 columns (L.F3, L.F4, etc.). However, it is a requirement of ForestPlots to fill these in.</p>
+<p>As a quick summary, flag 3 describes how the measurement was taken and Flag 4 describes whether the value was modified. For most cases, you can fill in the Flag 3 and Flag 4 columns as 0. However, if the diameter was measured with something other than a tape measure or was retrospectively modified, then view the Flag options <a href="https://forestplots.net/upload/ManualsEnglish/RAINFOR_LianaDataCodes_EN.pdf">here</a> and fill in the column with the correct code.</p>
+</div>
+</div>
+<div id="upload-data" class="section level2 hasAnchor">
+<h2>Upload data<a href="lianas.html#upload-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To upload liana data, navigate to the <code>Data Import</code> section and click ‘Go’!</p>
+<p> </p>
+<center>
+<img src="images/upload-liana-data.png" />
+</center>
+<p> </p>
+<p><strong>Hint: the green down arrow button next to “Import Liana Plot Data” contains the upload template you filled in earlier.</strong></p>
+<p>The “Plot Census” button refers to the tree censuses that are stored in ForestPlots. Since lianas are typically collected at the same time as trees, choose the tree census that occurred simultaneously as the liana census that is being currently being uploaded.</p>
+<p>The button, “Copy participants from linked plot census?”, allows for all participants in the chosen Plot Census to be automatically copied to the liana census being uploaded. Click this button if all participants of the associated tree census should be associated with the liana census being uploaded.</p>
+<p> </p>
+<center>
+<img src="images/upload-lianas-choose-census.png" />
+</center>
+<p> </p>
+<p>Fill in the census dates and any comments that you need to be uploaded for this census.</p>
+<p>Select the file to be uploaded.</p>
+<p>If there is anything wrong with the data you are trying to upload, you will be told here. You can either fix the individual issues here or go back to the Excel file, fix the issues, and re-do the upload.</p>
+</div>
+<div id="sign-off-data" class="section level2 hasAnchor">
+<h2>Sign off data<a href="lianas.html#sign-off-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Once the data has been uploaded, we need to check that the data is okay.</p>
+<p>The first step is to run the ‘Liana Dynamics’ Query which will tell us whether the data is consistent or not:</p>
+<ul>
+<li>Click on the <code>Query Library Icon</code> on the left-hand side of the screen<br />
+</li>
+<li>Select ‘Private’</li>
+<li>Click on ‘Lianas’ in the empty box</li>
+<li>Select ‘Liana Dynamics’, click on the green arrow<br />
+</li>
+<li>Click ‘next’</li>
+<li>Filter for your plots, then add your plots by selecting the ‘add’ icon (<em>You can add many at a time</em>)<br />
+</li>
+<li>Click ‘Next’ at the bottom of the page</li>
+<li>Select ‘Save to excel’</li>
+<li>Open the Excel file and check the last column ‘Consistency Check’ where we expect all of the values of this column to be zero
+<ul>
+<li>If 0, no inconsistencies were found in the liana data (move to sign off the data)</li>
+<li>If 1, extra values were found in the liana data (check the data for lianas recorded as alive after being recorded as dead)<br />
+</li>
+<li>If -1, missing values were found in the liana data (check the data for lianas with missing information)</li>
+</ul></li>
+</ul>
+<div id="fix-the-inconsistencies-in-the-liana-data" class="section level3 hasAnchor">
+<h3>Fix the inconsistencies in the liana data<a href="lianas.html#fix-the-inconsistencies-in-the-liana-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="extra-values-in-the-liana-data" class="section level4 hasAnchor">
+<h4>Extra values in the liana data<a href="lianas.html#extra-values-in-the-liana-data" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>If you find that the Consistency Check in the Lianas Dynamic Query has given you a number greater than 0, then it typically means that a liana was recorded as dead or not recorded.</p>
+<p>To check for this, you can either download a liana field sheet and manually look for these trees, or you can generate a list of the lianas that have an issue. To generate the list of lianas that have back to life lianas or missing lianas, follow these steps:</p>
+<ul>
+<li>Click on the <code>Query Library Icon</code> on the left-hand side of the screen<br />
+</li>
+<li>Select ‘Private’</li>
+<li>Click on ‘Lianas’ in the empty box</li>
+<li>Select ‘QC Lianas recorded as Alive after being recorded as Dead’<br />
+</li>
+<li>Select the necessary plot(s)</li>
+<li>Click ‘Next’ on the bottom of the page</li>
+<li>Select ‘Save to excel’</li>
+</ul>
+<p>This excel file now has a list of the plots (column B), lianas (column E), and the census where the liana came back to life or was missed (column F and I).</p>
+</div>
+<div id="missing-values-in-the-liana-data" class="section level4 hasAnchor">
+<h4>Missing values in the liana data<a href="lianas.html#missing-values-in-the-liana-data" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>If you find that the Consistency Check in the Lianas Dynamic Query has given you a number greater than 0, then it typically means that a liana was missed in the data.</p>
+<p>To check for this, you can either download a liana field sheet and manually look for these trees, or you can generate a list of the lianas that have an issue. To generate the list of lianas that have back to life lianas or missing lianas, follow these steps:</p>
+<ul>
+<li>Click on the <code>Query Library Icon</code> on the left-hand side of the screen<br />
+</li>
+<li>Select ‘Private’</li>
+<li>Click on ‘Lianas’ in the empty box</li>
+<li>Select ‘QC Lianas with missing censuses’</li>
+<li>Select the highlighted plots</li>
+<li>Click ‘Next’ on the bottom of the page</li>
+<li>Select ‘Save to excel’</li>
+</ul>
+<p>This Excel file now has the list of plots (column B) and the lianas (columns E and F) that have one or more censuses missing (Column C).</p>
+</div>
+<div id="fix-the-issues-on-forestplots" class="section level4 hasAnchor">
+<h4>Fix the issues on ForestPlots<a href="lianas.html#fix-the-issues-on-forestplots" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>To fix the issues identified above, we recommend downloading a liana field sheet, viewing the errors there in its entirety, and modifying the errors there in a different color.</p>
+<p>To download the field sheet,</p>
+<ul>
+<li>Go to the plot and select ‘Data Export’<br />
+</li>
+<li>Click on ‘Generate Liana Field Sheet’<br />
+</li>
+<li>Open the excel file and check the values of flagged lianas</li>
+<li>To correctly modify the data, first check the values against the original field sheets or, when field sheets are not available, in the original data</li>
+<li>If values are missing, interpolate the diameter when necessary</li>
+</ul>
+<p>Once you have identified the errors, and recorded the changes you want to make, you can modify each liana one-by-one on the ForestPlots platform:</p>
+<ul>
+<li>Open the plot on the platform and go to ‘Vegetation’</li>
+<li>Click on arrow in box to select ‘Lianas’</li>
+<li>Search for the lianas using the <code>Tag No</code> or <code>Tree ID</code> column</li>
+<li>Correct the values manually by clicking the magnifying glass icon, then edit</li>
+</ul>
+<p>After all of the values have been modified, re-run the ‘Liana Dynamics’ Query and repeat these steps if necessary.</p>
+</div>
+</div>
+<div id="no-inconsistencies-in-the-liana-data" class="section level3 hasAnchor">
+<h3>No inconsistencies in the liana data<a href="lianas.html#no-inconsistencies-in-the-liana-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>When there are no inconsistencies in the liana data (aka Consistency Check = 0), we can sign off the the liana data!</p>
+<p>To sign off the liana data,</p>
+<ul>
+<li>Open the plot</li>
+<li>Click ‘Details’ on the plot menu<br />
+</li>
+<li>Click ‘Edit’ in the top right</li>
+<li>Click on the ‘Forest Inventory’ section</li>
+<li>Fill in the information ‘Liana Sample’ with “Where the liana data is stored + the liana census you signed off + the date the liana census was signed off”, e.g. <strong>ForestPlots.net; Liana Census 3; QCJan2026</strong></li>
+</ul>
+<p>Even though the data has been signed off, it does not mean that people with access to this plot can see this liana census. To check if the liana data has been released to all members who have access to the plot,</p>
+<ul>
+<li>Navigate to the Plot page</li>
+<li>Click Censuses<br />
+</li>
+<li>Choose Liana Censuses</li>
+</ul>
+<p>If the lock is red, this means only you can see the liana plot census.
+If the lock is green, this means everyone who has access to the plot can see the liana census.</p>
+<p>It is important to ensure everyone in your plot can see the liana census. To change the view rights of this census,</p>
+<ul>
+<li>Click the magnifying glass icon at the right of the census<br />
+</li>
+<li>Click Edit<br />
+</li>
+<li>And ensure “Is Released to My Plots” is set to TRUE</li>
+</ul>
+</div>
+</div>
+<div id="all-done" class="section level2 hasAnchor">
+<h2>All done!<a href="lianas.html#all-done" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Top work! Now you have uploaded and signed off liana data to your plot. Congratulations!</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="query-checks.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="tree-data-dictionary.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": true,
+    "facebook": false,
+    "twitter": false,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section"
+  }
+});
+});
+</script>
+
+</body>
+
+</html>

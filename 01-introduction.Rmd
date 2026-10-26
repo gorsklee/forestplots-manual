@@ -7,7 +7,7 @@ This manual currently covers:
 * Digitising Data — how to transcribe field data into the correct Excel format
 * Data Upload — how to identify and prepare the right upload format for your data
 * Query Checks — how to verify your plot dynamics after upload
-* Liana Data — the equivalent workflow for liana data (assumes familiarity with tree data)
+* Liana Data — the entire workflow for liana data (assumes familiarity with tree data)
 * Tree Data Dictionary — a reference for every column in the tree data templates
 * Common Issues & FAQs — answers to the most frequent questions
 

@@ -39,14 +39,14 @@ It is important that you type the data onto the original Excel file because:
 
 After digitising your data, check that:
 
-* All required columns are present (including original identification)
-* An original identification column exists and is filled in
+* An original identification column exists and is completely filled in
 * Recruits were typed and have their tag recorded in the New Tag No column
 * Diameter and POM are recorded in millimeters (mm), not centimeters (cm)
-* All of the following columns are completely filled in with no blanks: Family, original identification, Species, D, POM, Flag1, Flag2, Flag3, Flag4
+* All of the following columns are completely filled in with no blanks: Family, original identification, Species, D, POM, Flag1, Flag2
+* Flag3 and Flag4 are filled in for alive trees
 * Any stems that changed tag have their new tag written in the New Tag No column
 * If the plot already exists on ForestPlots, TreeIDs are present and have not been modified
-* All optional columns have been filled in correctly according to the [Tree Data Dictionary](#tree-data-dictionary)
+* All columns have been filled in correctly according to the [Tree Data Dictionary](#tree-data-dictionary)
 
 Although every column should be checked, users most commonly have questions about:
 

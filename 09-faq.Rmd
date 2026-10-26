@@ -4,41 +4,54 @@
 
 <details>
 <summary>What is the difference between `Tag No` and `New Tag No`?</summary>
+<br>
 
-`Tag No` contains all of the tag numbers of the stems, but what is the purpose of the `New Tag No` column?
+* `Tag No` stores all of the tag numbers of the stems in the ForestPlots database.
+* `New Tag No` is used during upload to update the tag numbers in Forestplots. 
 
-The `New Tag No` column is used to update the tag numbers in Forestplots. When uploading data, only the `New Tag No` column will be used, not `Tag No`. 
-
-Whether you are uploading lianas/trees for the first time or uploading an additional census, use the `New Tag No` column.
-
-When uploading stems for the first time, there are no records of tag numbers so you must write all of the tag numbers in the `New Tag No` column. 
-
-When uploading an additional census, there are existing tag numbers in the database. Therefore, you do not need to upload all of the tag numbers again. Instead, you only need to upload the tag numbers for 
+When uploading data, use the New Tag No column to upload the tags of 
 
 1. new recruits (stems that have no records of a tag number) and  
-2. stems that have had their tag number changed.  
+2. stems that had their tag changed.
 
-Therefore, fill in the `New Tag No` column for all new recruits or when a stem's tag number changes. There is no need to fill in the `New Tag No` column for a stem whose tag remains the same.
+The Explanation?
 
-</details>
+When uploading stems for the first time, there are no records of tag numbers so you must write all of the tag numbers in the New Tag No column to update the tags in the database. 
 
-<details
-<summary>Do I need to add an original identification column?</summary>
+When uploading an additional census, there are existing tags in the database. Therefore, you do not need to upload all of the tags again. Instead, you only need to upload the tags for new recruits or stems that had their tag changed.
 
-Yes! The `original identification` column enables you to write the identification that was recorded in the field. Because the Family and Species columns take a very specific format (using the indet system), the original identification column gives you a place to record the identification exactly as it was recorded in the field.
+Therefore, fill in the New Tag No column for all new recruits or when a stem's tag number changes. There is no need to fill in the New Tag No column for a stem whose tag remains the same since the database already has this information.
 
 </details>
 
 <details>
-<summary>How do I fill in Flag3 and Flag4?</summary>
+<summary>Do I need to add an `original identification` column?</summary>
+<br>
+Yes! The `original identification` column enables you to write the identification that was recorded in the field. 
 
-It is commonly forgotten to fill in the Flag3 and Flag4 columns. However, ForestPlots requires that these columns are filled in when the stem is alive. 
-
-As a quick summary, Flag3 describes how the measurement was taken and Flag4 describes whether the value was modified. For most cases, you can fill in the Flag3 and Flag4 columns as 0. However, if the diameter was measured with something other than a tape measure or was retrospectively modified, then view the Flag options for [trees here](https://forestplots.net/upload/ManualsEnglish/RAINFOR_data_codes_EN.pdf) and [lianas here](https://forestplots.net/upload/ManualsEnglish/RAINFOR_LianaDataCodes_EN.pdf). 
-
-Then fill in the column with the correct code.
+The Family and Species columns take a very specific format using indet for unknown parts of the taxonomy. Therefore, the original identification column gives you a place to record the identification exactly as it was recorded in the field, even if it is not a certified species according to World Flora Online.
 
 </details>
+
+<details>
+<summary>How do I fill in `Flag3` and `Flag4`?</summary>
+<br>
+If the stem is dead, leave Flag3 and Flag4 empty. However, Flag3 and Flag4 must be filled in when a stem is alive because:
+
+* `Flag3` describes how the measurement was taken, and
+* `Flag4` describes whether the diameter value was modified.
+
+If the stem is alive and was measured normally with a tape measure and not modified, write 0.
+
+Otherwise, if the diameter was measured with something other than a tape measure or was retrospectively modified, then view the Flag options for [trees here](https://forestplots.net/upload/ManualsEnglish/RAINFOR_data_codes_EN.pdf) and [lianas here](https://forestplots.net/upload/ManualsEnglish/RAINFOR_LianaDataCodes_EN.pdf) and fill in the flag columns with the appropriate code that describes the measurement technique or diameter modification. 
+
+*Please note that all modifications to the diameter should occur after upload and the diameter columns should contain the original measurement recorded in the field.*
+
+</details>
+
+<br>
+
+**Have a question? Reach out to the ForestPlots team, and we can answer your question and add it here to help others in the future!**
 
 ---
 

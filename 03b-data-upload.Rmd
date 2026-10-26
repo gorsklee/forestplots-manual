@@ -2,7 +2,7 @@
 
 In this section we assume:
 
-* you correctly followed the steps from digitising data,
+* you correctly followed and completed the steps in the [Digitising Data Section](#digitising-data),
 * you have been trained by a member of the ForestPlots' team to upload data, and
 * you are preparing data for upload, either by yourself or through a ForestPlots team member.
 
@@ -33,41 +33,73 @@ Specifically, in ForestPlots, there are four different types of data:
   <text font-family="Source Serif 4, Georgia, serif" font-size="12" fill="#444441" x="494" y="122" text-anchor="middle">Yes</text>
   <!-- Left node: new plot -->
   <rect x="60" y="160" width="200" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-  <text font-family="Source Serif 4, Georgia, serif" font-size="14" font-weight="600" fill="#26215C" x="160" y="182" text-anchor="middle" dominant-baseline="central">New plot</text>
+  <text font-family="Source Serif 4, Georgia, serif"
+      font-size="12"
+      font-weight="600"
+      fill="#26215C"
+      text-anchor="middle">
+  <tspan x="160" y="182">How many censuses need to be</tspan>
+  <tspan x="160" dy="14">uploaded for the new plot?</tspan></text>
   <!-- Right node: recensused -->
-  <rect x="420" y="160" width="200" height="44" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
-  <text font-family="Source Serif 4, Georgia, serif" font-size="14" font-weight="600" fill="#4A1B0C" x="520" y="182" text-anchor="middle" dominant-baseline="central">Recensused plot</text>
-  <!-- Left sub-branches -->
+  <rect x="410" y="160" width="220" height="44" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+  <text font-family="Source Serif 4, Georgia, serif"
+      font-size="12"
+      font-weight="600"
+      fill="#4A1B0C"
+      text-anchor="middle">
+      <tspan x="520" y="182">How many censuses need to be</tspan>
+      <tspan x="520" dy="14">uploaded for the recensused plot?</tspan></text>
+   <!-- Left sub-branches -->
   <line x1="120" y1="204" x2="80" y2="290" stroke="grey" stroke-width="1" marker-end="url(#fp-arrow)"/>
-  <text font-family="Source Serif 4, Georgia, serif" font-size="12" fill="#444441" x="80" y="252" text-anchor="middle">Single</text>
+  <text font-family="Source Serif 4, Georgia, serif" font-size="12" fill="#444441" x="80" y="252" text-anchor="middle">One</text>
   <line x1="200" y1="204" x2="240" y2="290" stroke="grey" stroke-width="1" marker-end="url(#fp-arrow)"/>
   <text font-family="Source Serif 4, Georgia, serif" font-size="12" fill="#444441" x="246" y="252" text-anchor="middle">Multiple</text>
   <!-- Right sub-branches -->
   <line x1="480" y1="204" x2="440" y2="290" stroke="grey" stroke-width="1" marker-end="url(#fp-arrow)"/>
-  <text font-family="Source Serif 4, Georgia, serif" font-size="12" fill="#444441" x="434" y="252" text-anchor="middle">Single</text>
+  <text font-family="Source Serif 4, Georgia, serif" font-size="12" fill="#444441" x="434" y="252" text-anchor="middle">One</text>
   <line x1="560" y1="204" x2="600" y2="290" stroke="grey" stroke-width="1" marker-end="url(#fp-arrow)"/>
   <text font-family="Source Serif 4, Georgia, serif" font-size="12" fill="#444441" x="606" y="252" text-anchor="middle">Multiple</text>
   <!-- Four outcome boxes -->
-  <rect x="28" y="290" width="104" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-  <text font-family="Source Serif 4, Georgia, serif" font-size="13" font-weight="600" fill="#26215C" x="80" y="308" text-anchor="middle" dominant-baseline="central">[New plot,](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fsecure.forestplots.net%2FSiteTemplates%2Fen%2FMultiPlotImportTreeTemplate.xlsx&wdOrigin=BROWSELINK)</text>
-  <text font-family="Source Serif 4, Georgia, serif" font-size="11" fill="#3C3489" x="80" y="326" text-anchor="middle" dominant-baseline="central">1 census</text>
-  <rect x="188" y="290" width="124" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
-  <text font-family="Source Serif 4, Georgia, serif" font-size="13" font-weight="600" fill="#26215C" x="250" y="308" text-anchor="middle" dominant-baseline="central">[New plot,](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fsecure.forestplots.net%2FSiteTemplates%2Fen%2FPlotMultiCensusImportTemplate.xlsx&wdOrigin=BROWSELINK)</text>
-  <text font-family="Source Serif 4, Georgia, serif" font-size="11" fill="#3C3489" x="250" y="326" text-anchor="middle" dominant-baseline="central">multiple censuses</text>
-  <rect x="388" y="290" width="104" height="44" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
-  <text font-family="Source Serif 4, Georgia, serif" font-size="13" font-weight="600" fill="#4A1B0C" x="440" y="308" text-anchor="middle" dominant-baseline="central">Recensus,</text>
-  <text font-family="Source Serif 4, Georgia, serif" font-size="11" fill="#712B13" x="440" y="326" text-anchor="middle" dominant-baseline="central">1 census</text>
-  <rect x="548" y="290" width="112" height="44" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
-  <text font-family="Source Serif 4, Georgia, serif" font-size="13" font-weight="600" fill="#4A1B0C" x="604" y="308" text-anchor="middle" dominant-baseline="central">[Recensus,](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fsecure.forestplots.net%2FSiteTemplates%2Fen%2FPlotMultiCensusImportTemplate.xlsx&wdOrigin=BROWSELINK)</text>
-  <text font-family="Source Serif 4, Georgia, serif" font-size="11" fill="#712B13" x="604" y="326" text-anchor="middle" dominant-baseline="central">multiple censuses</text>
-  <!-- Bottom label -->
-  <text font-family="Source Serif 4, Georgia, serif" font-size="12" fill="#5F5E5A" x="340" y="378" text-anchor="middle">How many censuses do you need to upload?</text>
+  <!-- new single census -->
+  <rect x="28" y="290" width="104" height="35" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text font-family="Source Serif 4, Georgia, serif"
+      font-size="11"
+      font-weight="600"
+      fill="#26215C"
+      text-anchor="middle">
+  <tspan x="80" y="305">New</tspan>
+  <tspan x="80" dy="13">single census</tspan></text>
+  <!-- new multi-census -->
+  <rect x="188" y="290" width="124" height="35" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text font-family="Source Serif 4, Georgia, serif"
+      font-size="11"
+      font-weight="600"
+      fill="#26215C"
+      text-anchor="middle">
+  <tspan x="250" y="305">New</tspan>
+  <tspan x="250" dy="13">multi-census</tspan></text>
+  <!-- Existing single census -->
+  <rect x="388" y="290" width="104" height="35" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+  <text font-family="Source Serif 4, Georgia, serif"
+      font-size="11"
+      font-weight="600"
+      fill="#4A1B0C"
+      text-anchor="middle">
+  <tspan x="440" y="305">Existing</tspan>
+  <tspan x="440" dy="13">single recensus</tspan></text>
+  <!-- Existing multi-census -->
+  <rect x="548" y="290" width="112" height="35" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+  <text font-family="Source Serif 4, Georgia, serif"
+      font-size="11"
+      font-weight="600"
+      fill="#4A1B0C"
+      text-anchor="middle">
+  <tspan x="604" y="305">Existing</tspan>
+  <tspan x="604" dy="13">multi-recensus</tspan></text>
 </svg>
 </div>
 
-The figure above can help you identify which upload format you need.
-
-Before preparing any upload file, ensure you have completed the steps described in the [Digitising Data Section](#digitising-data).
+The figure above can help you identify which upload format you need. The format template can be viewed and downloaded using the table below:
 
 | Type of Data    | Where to find the data format |
 |-----------------|-------------------------------|
@@ -75,6 +107,7 @@ Before preparing any upload file, ensure you have completed the steps described 
 | New plots with two or more censuses               | Uses the [Bulk Import: Multi-Census Plot Data](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fsecure.forestplots.net%2FSiteTemplates%2Fen%2FPlotMultiCensusImportTemplate.xlsx&wdOrigin=BROWSELINK) template available in the **Data Import** section of ForestPlots.net. |
 | Existing plots with one additional census.        | Uses the tree field sheet for the plot, which can be downloaded from the **Data Export** section of the plots page on ForestPlots.net. |
 | Existing plots with multiple additional censuses. | Uses the [Bulk Import: Multi-Census Plot Data](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fsecure.forestplots.net%2FSiteTemplates%2Fen%2FPlotMultiCensusImportTemplate.xlsx&wdOrigin=BROWSELINK)|
+| Liana data                                        | Visit the designated [lianas page](#lianas) for upload instructions, but lianas use this template: [Import Liana Plot Census Data](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fsecure.forestplots.net%2FSiteTemplates%2Fen%2FLianaCensusImportTemplate.xlsx&wdOrigin=BROWSELINK).|
 
 ## How to upload the data
 

@@ -23,7 +23,7 @@
 <meta name="author" content="ForestPlots Team" />
 
 
-<meta name="date" content="2026-10-23" />
+<meta name="date" content="2026-10-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -76,6 +76,21 @@
 <!-- Google Fonts (optional — remove if offline build needed) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+<!-- Fix SVG url(#id) marker references broken by bookdown's <base> tag -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var pageUrl = window.location.href.split('#')[0];
+  ['marker-start', 'marker-mid', 'marker-end'].forEach(function (attr) {
+    document.querySelectorAll('[' + attr + ']').forEach(function (el) {
+      var val = el.getAttribute(attr);
+      if (val && val.indexOf('url(#') !== -1) {
+        el.setAttribute(attr, val.replace(/url\(#/g, 'url(' + pageUrl + '#'));
+      }
+    });
+  });
+});
+</script>
 
 
 
