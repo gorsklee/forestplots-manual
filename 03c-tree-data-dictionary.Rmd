@@ -13,7 +13,7 @@ The **Required** column uses four categories:
 * **Optional** — may be left blank.
 * **Dry Forest** — only relevant for Dry Forest plots; leave blank otherwise.
 
-See the [Common Issues and Frequently Asked Questions](#faqs) for more information.
+See the [Common Issues and Frequently Asked Questions](#faq) for more information.
 
 ```{r tree-data-dictionary-setup, include=FALSE}
 library(DT)
