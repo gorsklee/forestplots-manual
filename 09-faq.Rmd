@@ -1,6 +1,6 @@
 # Common Issues & FAQs {#faq}
 
-## Data entry {-}
+## Data entry {#faq-data-entry}
 
 <details>
 <summary>What is the difference between `Tag No` and `New Tag No`?</summary>
@@ -34,7 +34,7 @@ The Family and Species columns take a very specific format using indet for unkno
 </details>
 
 <details>
-<summary>How do I fill in `Flag3` and `Flag4`?</summary>
+<summary>How do I fill in `Flag3` and `Flag4` for trees?</summary>
 <br>
 If the stem is dead, leave Flag3 and Flag4 empty. However, Flag3 and Flag4 must be filled in when a stem is alive because:
 
@@ -49,8 +49,36 @@ Otherwise, if the diameter was measured with something other than a tape measure
 
 </details>
 
+<details>
+<summary>How do I fill in `Flag3` and `Flag4` for lianas?</summary>
 <br>
+It is commonly forgotten to fill in the Flag3 and Flag4 columns (L.F3, L.F4, etc.). However, it is a requirement of ForestPlots to fill these in. 
 
+As a quick summary, Flag3 describes how the measurement was taken and Flag4 describes whether the value was modified. For most cases, you can fill in the Flag3 and Flag4 columns as 0. However, if the diameter was measured with something other than a tape measure or was retrospectively modified, then view the Flag options [here](https://forestplots.net/upload/ManualsEnglish/RAINFOR_LianaDataCodes_EN.pdf) and fill in the column with the correct code.
+</details>
+
+<details>
+<summary>Have you filled `Most Affected Tree` and `Host trees` columns correctly?</summary>
+<br>
+The `Most Affected Tree` and `Host trees` column must contain the Tree ID of the tree you are referencing, not the Tag No. 
+
+Most people find this frustrating because the field sheet gives this value as the tag number and not the Tree ID. The reason for this is that as you can imagine the tag number is more helpful in the field than the Tree ID. But if the Tree ID is not given to you in the field sheet how do you find it?
+
+To get the Tree ID, you can go to the Vegetation tab of your plot, click Trees, and search the Tag No in this section and copy the Tree ID from here.
+
+&nbsp;
+
+<center>
+![](images/finding-TreeID.png)
+
+</center>
+
+&nbsp;
+
+You can also download a Plot Dump and find the tree and Tree ID there.
+
+</details>
+<br>
 **Have a question? Reach out to the ForestPlots team, and we can answer your question and add it here to help others in the future!**
 
 ---

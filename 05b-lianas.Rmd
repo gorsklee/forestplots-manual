@@ -1,3 +1,5 @@
+# (PART) Lianas {-}
+
 # Liana data {#lianas}
 
 ## Collecting liana data
@@ -20,47 +22,8 @@ Data must be in the exact correct format before being uploaded to ForestPlots. S
 
 To understand how to fill in each column, view the Definitions tab of the [liana fieldsheet](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fsecure.forestplots.net%2FSiteTemplates%2Fen%2FLianaCensusImportTemplate.xlsx&wdOrigin=BROWSELINK). 
 
-If you still encounter issues, here is some information to help address some of the most common mistakes that people make:
+If you still encounter issues, visit the [FAQs page](#faq-data-entry) where you will find information to help address some of the most common issues that people encounter.
 
-### `Tag No` versus `New Tag No` column
-
-`Tag No` contains all of the tag numbers of the liana stems, but what is the purpose of the `New Tag No` column?
-
-The `New Tag No` column is used to update the tag numbers of stems in Forestplots. When uploading data, only the `New Tag No` column will be used, not `Tag No`. 
-
-Whether you are uploading lianas for the first time or uploading an additional liana census, use the `New Tag No` column.
-
-When uploading lianas for the first time, there are no records of tag numbers so you must write all of the tag numbers in the `New Tag No` column. 
-
-When uploading an additional liana census, there are existing tag numbers in the database. Therefore, you do not need to upload all of the tag numbers again. Instead, you only need to upload the tag numbers for 
-
-1. new recruits (stems that have no records of a tag number) and  
-2. stems that have had their tag number changed.  
-Therefore, fill in the `New Tag No` column for all new recruits or when a liana's tag number changes. There is no need to fill in the `New Tag No` column for a stem whose tag remains the same.
-
-### Have you filled `Most Affected Tree` and `Host trees` columns correctly?
-
-The `Most Affected Tree` and `Host trees` column must contain the Tree ID of the tree you are referencing, not the Tag No. 
-
-Most people find this frustrating because the field sheet gives this value as the tag number and not the Tree ID. The reason for this is that as you can imagine the tag number is more helpful in the field than the Tree ID. But if the Tree ID is not given to you in the field sheet how do you find it?
-
-To get the Tree ID, you can go to the Vegetation tab of your plot, click Trees, and search the Tag No in this section and copy the Tree ID from here.
-
-&nbsp;
-
-<center>
-![](images/finding-TreeID.png)
-</center>
-
-&nbsp;
-
-You can also download a Plot Dump and find the tree and Tree ID there.
-
-### Fill in the flag3 and flag4 column for alive lianas!
-
-It is commonly forgotten to fill in the Flag3 and Flag4 columns (L.F3, L.F4, etc.). However, it is a requirement of ForestPlots to fill these in. 
-
-As a quick summary, flag 3 describes how the measurement was taken and Flag 4 describes whether the value was modified. For most cases, you can fill in the Flag 3 and Flag 4 columns as 0. However, if the diameter was measured with something other than a tape measure or was retrospectively modified, then view the Flag options [here](https://forestplots.net/upload/ManualsEnglish/RAINFOR_LianaDataCodes_EN.pdf) and fill in the column with the correct code.
 
 ## Upload data
 

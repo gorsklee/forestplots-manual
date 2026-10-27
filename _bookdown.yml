@@ -12,5 +12,6 @@ rmd_files:
   - 03b-data-upload.Rmd
   - 05a-tree-query-checks.Rmd
   - 05b-lianas.Rmd
-  - 03c-data-dictionary.Rmd
+  - 03c-tree-data-dictionary.Rmd
+  - 05c-liana-data-dictionary.Rmd
   - 09-faq.Rmd

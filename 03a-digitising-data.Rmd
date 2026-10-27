@@ -1,3 +1,5 @@
+# (PART) Trees {-}
+
 # Digitising Data {#digitising-data}
 
 For this section we assume:

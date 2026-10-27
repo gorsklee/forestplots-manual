@@ -1,6 +1,6 @@
-# Tree Data Dictionary {#tree-data-dictionary}
+# Liana Data Dictionary {#liana-data-dictionary}
 
-This page covers every column  used with ForestPlots tree data.
+This page covers every column  used with ForestPlots liana data.
 Use the **search box** to find any column by name or keyword, or use the **filter arrows**
 on any column heading to narrow by template, requirement level, or units.
 
@@ -9,29 +9,27 @@ The **Required** column uses four categories:
 * **Always** — must be filled in for every row in that template.
 * **Conditional** — required only when a specific condition is met (see the *Condition* column).
 * **Optional** — may be left blank.
-* **Dry Forest** — only relevant for Dry Forest plots; leave blank otherwise.
 
-See the [Common Issues and Frequently Asked Questions](#tree-data-faqs) for more information.
+See the [Common Issues and Frequently Asked Questions](#faqs) for more information.
 
-```{r data-dictionary-setup, include=FALSE}
+```{r liana-data-dictionary-setup, include=FALSE}
 library(DT)
 library(readxl)
 ```
 
-```{r data-dictionary-table, echo=FALSE}
+```{r liana-data-dictionary-table, echo=FALSE}
 
 # ── Data dictionary ────────────────────────────────────────────────────────────
 # Columns: Column | Template | Units | Description | Required | Condition | Format | Notes
 
-dict <- read_excel("data/data-dictionary.xlsx")
+dict <- read_excel("data/data-dictionary.xlsx", sheet = "lianas")
   
 
 # ── Rendering ──────────────────────────────────────────────────────────────────
 required_colours <- c(
   "Always"  = "#C8E6C9",   # soft green
   "Conditional" = "#FFF9C4",   # soft yellow
-  "Optional" = "#E0E0E0",   # soft grey
-  "Dry Forest"  = "#BBDEFB" # soft blue
+  "Optional" = "#E0E0E0"   # soft grey
 )
 
 datatable(
